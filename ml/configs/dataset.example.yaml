@@ -1,0 +1,11 @@
+# Copy to dataset.yaml and set an actual, locally available dataset path.
+path: ../../datasets/animals
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: elephant
+  1: giraffe
+  2: zebra
+  3: tiger
+  4: rhinoceros
