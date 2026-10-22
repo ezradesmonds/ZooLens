@@ -6,6 +6,6 @@ class ScannerController extends Controller
 {
     public function index()
     {
-        return response('Halaman Scanner (stub)');
+        return view('scanner');
     }
 }
