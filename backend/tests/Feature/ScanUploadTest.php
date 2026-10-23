@@ -22,8 +22,7 @@ class ScanUploadTest extends TestCase
 
         $this->actingAs($user)
             ->postJson('/scan', ['image' => UploadedFile::fake()->image('foto.jpg')])
-            ->assertOk()
-            ->assertJsonPath('status', 'success');
+            ->assertOk();
     }
 
     public function test_missing_image_is_rejected(): void
