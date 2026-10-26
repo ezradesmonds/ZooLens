@@ -63,7 +63,7 @@
             </div>
 
             {{-- Simulasi (khusus pengembangan) --}}
-            <div class="mt-5 rounded-xl border border-dashed border-amber-300 bg-amber-50 p-3">
+            <div class="mt-5 hidden rounded-xl border border-dashed border-amber-300 bg-amber-50 p-3">
                 <label for="simMode" class="text-xs font-bold uppercase tracking-wide text-amber-700">Mode simulasi (data dummy)</label>
                 <select id="simMode" class="mt-1 w-full rounded-lg border border-amber-200 bg-white px-3 py-2 text-sm">
                     <option value="random">Deteksi acak (berhasil)</option>
@@ -159,7 +159,7 @@
      * KONFIGURASI
      * ===================================================================== */
     const CONFIG = {
-        USE_REAL_API: false,                 // true => kirim gambar ke POST /scan
+        USE_REAL_API: true,                  // true => kirim gambar ke POST /scan
         SCAN_URL: "{{ url('/scan') }}",
         THRESHOLD: 0.5,                      // confidence minimum
         MAX_W: 1024,                         // lebar maksimum canvas hasil
@@ -441,7 +441,46 @@
             body: fd,
         });
         if (!res.ok) throw new Error('Server mengembalikan status ' + res.status + '. Coba lagi beberapa saat.');
-        return res.json();
+        const data = await res.json();
+
+        if (data.status === 'error') {
+            return { detections: [] };
+        }
+
+        const CLASS_MAP = {
+            0: 'elephant',
+            1: 'giraffe',
+            2: 'zebra',
+            3: 'tiger',
+            4: 'rhinoceros',
+        };
+        const imgW = (data.image && data.image.width) || currentImg.naturalWidth;
+        const imgH = (data.image && data.image.height) || currentImg.naturalHeight;
+
+        const convertedDets = (data.detections || []).map((d) => {
+            const clsName = d.class || CLASS_MAP[d.class_id] || (d.animal && d.animal.common_name ? d.animal.common_name.toLowerCase() : 'elephant');
+            let bbox = d.bbox;
+            if (Array.isArray(bbox) && bbox.length === 4) {
+                const [x1, y1, x2, y2] = bbox;
+                bbox = {
+                    x: Math.max(0, Math.min(1, x1 / imgW)),
+                    y: Math.max(0, Math.min(1, y1 / imgH)),
+                    width: Math.max(0, Math.min(1, (x2 - x1) / imgW)),
+                    height: Math.max(0, Math.min(1, (y2 - y1) / imgH)),
+                };
+            }
+            return {
+                class: clsName,
+                confidence: d.confidence,
+                bbox: bbox,
+                animal: d.animal,
+            };
+        });
+
+        return {
+            ...data,
+            detections: convertedDets,
+        };
     }
 
     /* =====================================================================
