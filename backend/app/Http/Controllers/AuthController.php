@@ -9,17 +9,31 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    /**
+     * GET /register -> halaman daftar (resources/views/auth/register.blade.php).
+     */
     public function showRegister()
     {
-        return response('Halaman register');
+        return view('auth.register');
     }
 
+    /**
+     * POST /register -> buat akun baru lalu langsung login.
+     */
     public function register(Request $request)
     {
         $data = $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+        ], [
+            'name.required' => 'Nama wajib diisi.',
+            'email.required' => 'Email wajib diisi.',
+            'email.email' => 'Format email tidak valid.',
+            'email.unique' => 'Email ini sudah terdaftar.',
+            'password.required' => 'Password wajib diisi.',
+            'password.min' => 'Password minimal 8 karakter.',
+            'password.confirmed' => 'Konfirmasi password tidak cocok.',
         ]);
 
         $user = User::create([
@@ -34,16 +48,26 @@ class AuthController extends Controller
         return redirect()->route('scanner');
     }
 
+    /**
+     * GET /login -> halaman masuk (resources/views/auth/login.blade.php).
+     */
     public function showLogin()
     {
-        return response('Halaman login (stub, view dibuat bersama Ivy)');
+        return view('auth.login');
     }
 
+    /**
+     * POST /login -> autentikasi pengguna.
+     */
     public function login(Request $request)
     {
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required', 'string'],
+        ], [
+            'email.required' => 'Email wajib diisi.',
+            'email.email' => 'Format email tidak valid.',
+            'password.required' => 'Password wajib diisi.',
         ]);
 
         if (! Auth::attempt($credentials)) {
@@ -55,6 +79,9 @@ class AuthController extends Controller
         return redirect()->intended(route('scanner'));
     }
 
+    /**
+     * POST /logout -> akhiri sesi.
+     */
     public function logout(Request $request)
     {
         Auth::logout();
