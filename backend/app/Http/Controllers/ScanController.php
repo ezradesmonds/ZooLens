@@ -4,19 +4,38 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\ScanRequest;
 use App\Services\FactsheetService;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class ScanController extends Controller
 {
     public function store(ScanRequest $request, FactsheetService $factsheets)
     {
-        // MOCK: bukan hasil inferensi model. Diganti panggilan FastAPI di Week 7.
-        $aiResult = [
-            'image_width' => 1280,
-            'image_height' => 960,
-            'detections' => [
-                ['class_id' => 3, 'confidence' => 0.91, 'bbox' => [100, 80, 300, 260]],
-            ],
-        ];
+        $file = $request->file('image');
+        $aiServiceUrl = config('services.ai.url', 'http://127.0.0.1:8001');
+
+        $isMock = false;
+        try {
+            $response = Http::timeout(10)
+                ->attach('file', file_get_contents($file->getRealPath()), $file->getClientOriginalName())
+                ->post($aiServiceUrl . '/predict');
+
+            if ($response->successful()) {
+                $aiResult = $response->json();
+            } else {
+                throw new \Exception('AI service returned HTTP ' . $response->status());
+            }
+        } catch (\Throwable $e) {
+            Log::warning('FastAPI connection failed, falling back to mock: ' . $e->getMessage());
+            $isMock = true;
+            $aiResult = [
+                'image_width' => 1280,
+                'image_height' => 960,
+                'detections' => [
+                    ['class_id' => 3, 'confidence' => 0.91, 'bbox' => [100, 80, 300, 260]],
+                ],
+            ];
+        }
 
         $detections = [];
 
@@ -47,7 +66,7 @@ class ScanController extends Controller
 
         return response()->json([
             'status' => 'success',
-            'mock' => true,
+            'mock' => $isMock,
             'image' => [
                 'width' => $aiResult['image_width'],
                 'height' => $aiResult['image_height'],

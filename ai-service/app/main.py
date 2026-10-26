@@ -25,6 +25,18 @@ ZOOLENS_CLASSES = {
     "zebra": 2,
     "tiger": 3,
     "rhinoceros": 4,
+    "gajah": 0,
+    "jerapah": 1,
+    "harimau": 3,
+    "badak": 4,
+}
+
+CANONICAL_NAMES = {
+    0: "elephant",
+    1: "giraffe",
+    2: "zebra",
+    3: "tiger",
+    4: "rhinoceros",
 }
 
 _model = None
@@ -105,7 +117,7 @@ async def predict(file: UploadFile = File(...)):
 
         detections.append({
             'class_id': class_id,
-            'class_name': class_name,
+            'class_name': CANONICAL_NAMES.get(class_id, class_name),
             'confidence': round(float(box.conf[0]), 4),
             'bbox': [round(float(v), 2) for v in box.xyxy[0].tolist()],
         })
