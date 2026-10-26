@@ -1,0 +1,6 @@
+sumber,yaml,kelas (ID:nama->terpadu),gambar,label_ok,label_hilang,label_kosong,label_yatim,beda_hash_rf,box,lisensi (README),url (README)
+dataset_badak/badak,data.yaml,0:Project - v1 2024-10-28 8-29am->lainnya,269,154,115,0,125,0,157,License: CC BY 4.0,https://universe.roboflow.com/bagas13x/badak-vkfo9
+gajah/elephant-dataset-yolov,dataset.yaml,0:elephant->elephant,2092,275,1807,10,1699,288,399,-,-
+harimau,data.yaml,0:harimau->tiger,849,849,0,0,0,0,1754,License: CC BY 4.0,https://universe.roboflow.com/hewan1-yosi/harimau
+jerapah,data.yaml,0:jerapah->giraffe; 1:zebra->zebra,787,787,0,0,0,0,1208,License: CC BY 4.0,https://universe.roboflow.com/hewan1-yosi/jerapah
+zebra,data.yaml,0:zebra->zebra,706,532,0,174,0,0,686,License: CC BY 4.0,https://universe.roboflow.com/zebra-na7su/zebra-vrl1e
