@@ -160,7 +160,7 @@
      * ===================================================================== */
     const CONFIG = {
         USE_REAL_API: true,                  // true => kirim gambar ke POST /scan
-        SCAN_URL: "{{ url('/scan') }}",
+        SCAN_URL: "/scan",
         THRESHOLD: 0.5,                      // confidence minimum
         MAX_W: 1024,                         // lebar maksimum canvas hasil
         MAX_FILE_MB: 8,
@@ -440,7 +440,14 @@
             },
             body: fd,
         });
-        if (!res.ok) throw new Error('Server mengembalikan status ' + res.status + '. Coba lagi beberapa saat.');
+        if (!res.ok) {
+            let msg = 'Server mengembalikan status ' + res.status + '. Coba lagi beberapa saat.';
+            try {
+                const errJson = await res.json();
+                if (errJson.message) msg = errJson.message;
+            } catch (_) {}
+            throw new Error(msg);
+        }
         const data = await res.json();
 
         if (data.status === 'error') {
