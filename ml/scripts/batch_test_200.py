@@ -5,21 +5,21 @@ batch_test_200.py - Runner Otomatisasi Batch Testing 200 Kasus Visual ZooLens
 Fungsi:
 1. Memuat model YOLO11n (default: ai-service/best.pt)
 2. Memproses batch citra uji (folder images/test, folder test_200/, atau subfolder per kelas/kondisi)
-3. Mencocokkan prediksi dengan ground truth (jika ada file label .txt atau struktur folder)
+3. Mencocokkan prediksi dengan ground truth (dari file label .txt atau dari nama folder/file)
 4. Mengklasifikasikan status: TP (True Positive), FP (False Positive), FN (False Negative)
 5. Memetakan kondisi visual: Full Visibility, Moderate Occlusion, Severe Occlusion, Truncation
-6. Membagi otomatis PIC analisis ke anggota kelompok (Bryan, Ivy, Felix, Aldo, Ezra)
+6. Membagi otomatis PIC analisis ke anggota kelompok (Felix, Ivy, Bryan, Joseph)
 7. Menghasilkan file CSV siap buka di Excel (UTF-8 BOM) dan laporan ringkasan Markdown.
 
 Pemakaian:
-  python ml/scripts/batch_test_200.py --model ai-service/best.pt --data "D:/Documents/Ezra/Kuliah/PCU/Smstr 5/Manpro/ZooLens Manpro/ZooLens_final"
-  python ml/scripts/batch_test_200.py --images "D:/Documents/Ezra/Kuliah/PCU/Smstr 5/Manpro/ZooLens Manpro/test_200"
+  python ml/scripts/batch_test_200.py --images "D:/Documents/Ezra/Kuliah/PCU/Smstr 5/Manpro/ZooLens Manpro/test_200" --limit 0
 """
 
 import argparse
 import csv
 import glob
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -42,14 +42,30 @@ NAME_ALIASES = {
     "rhinoceros": ["badak", "rhino", "rhinoceros"],
 }
 
-# Pembagian PIC Analisis per Kelas Satwa
-PIC_ASSIGNMENT = {
-    "elephant": "Felix",
-    "giraffe": "Ivy",
-    "zebra": "Ivy",
-    "tiger": "Bryan",
-    "rhinoceros": "Bryan",
-}
+
+def determine_pic(img_path, gt_class):
+    """Menentukan anggota tim yang bertanggung jawab mereview foto ini."""
+    fn = Path(img_path).name.lower()
+    if "felix" in fn:
+        return "Felix"
+    if "ivy" in fn:
+        return "Ivy"
+    if "bryan" in fn:
+        return "Bryan"
+    if "joseph" in fn:
+        return "Joseph"
+
+    # Default berdasarkan kelas satwa
+    if gt_class == "elephant":
+        return "Felix"
+    elif gt_class in ["giraffe", "zebra"]:
+        return "Ivy"
+    elif gt_class == "tiger":
+        return "Bryan"
+    elif gt_class == "rhinoceros":
+        return "Joseph"
+
+    return "Aldo"
 
 
 def compute_iou(box1, box2):
@@ -76,18 +92,17 @@ def detect_ground_truth(img_path, label_dir=None):
     """
     Mencari ground truth kelas dan box:
     1. Dari file .txt berformat YOLO di label_dir atau folder labels/
-    2. Fallback dari nama folder atau nama file
+    2. Fallback dari nama folder induk atau nama file
     """
     img_p = Path(img_path)
     stem = img_p.stem
     boxes = []
 
-    # Cari file label
+    # 1. Cari file label fisik jika ada
     candidate_labels = []
     if label_dir and os.path.isdir(label_dir):
         candidate_labels.append(Path(label_dir) / f"{stem}.txt")
 
-    # Cek struktur umum yolo: images/test -> labels/test
     parts = list(img_p.parts)
     for i in range(len(parts) - 1, -1, -1):
         if parts[i].lower() == "images":
@@ -112,18 +127,41 @@ def detect_ground_truth(img_path, label_dir=None):
                             x2 = min(1.0, xc + w / 2)
                             y2 = min(1.0, yc + h / 2)
                             cname = CLASS_ID_MAP.get(cid, "unknown")
-                            boxes.append({"class_id": cid, "class_name": cname, "bbox": [x1, y1, x2, y2], "area": w * h})
+                            boxes.append({
+                                "class_id": cid,
+                                "class_name": cname,
+                                "bbox": [x1, y1, x2, y2],
+                                "area": w * h,
+                                "has_real_box": True,
+                            })
                 if boxes:
                     return boxes
             except Exception:
                 pass
 
-    # Fallback dari path string
+    # 2. Fallback dari folder induk atau nama file (image-level test set)
+    parent_dir = img_p.parent.name.lower()
+    for cname in CLASS_NAMES:
+        if cname == parent_dir:
+            return [{
+                "class_id": NAME_TO_ID[cname],
+                "class_name": cname,
+                "bbox": None,
+                "area": 0.5,
+                "has_real_box": False,
+            }]
+
     path_lower = str(img_path).lower()
     for cname, aliases in NAME_ALIASES.items():
         if any(a in path_lower for a in aliases):
             cid = NAME_TO_ID[cname]
-            return [{"class_id": cid, "class_name": cname, "bbox": [0.1, 0.1, 0.9, 0.9], "area": 0.64}]
+            return [{
+                "class_id": cid,
+                "class_name": cname,
+                "bbox": None,
+                "area": 0.5,
+                "has_real_box": False,
+            }]
 
     return []
 
@@ -131,22 +169,67 @@ def detect_ground_truth(img_path, label_dir=None):
 def determine_visual_condition(img_path, gt_boxes):
     """
     Mengidentifikasi kondisi visual:
-    1. Dari nama folder/tag file: 'occlusion_sev', 'occlusion_mod', 'truncation', 'full'
-    2. Dari analisis bounding box (proxy truncation jika menempel tepi, occlusion jika area kecil/tenggelam)
+    1. Dari nama file / kata kunci: occlusion, di air, semak, crop, truncation, full
+    2. Dari pembagian batch masing-masing anggota (Felix 1-20/21-40, Ivy, Bryan, Joseph)
     """
-    path_lower = str(img_path).lower()
+    fn = Path(img_path).name.lower()
 
-    if "severe" in path_lower or "occ_sev" in path_lower or "ekstrem" in path_lower:
+    # Kata kunci eksplisit
+    if any(w in fn for w in ["di air", "lumpur", "severe", "tenggelam", "occ_sev", "ekstrem"]):
         return "Severe Occlusion (>50%)"
-    if "moderate" in path_lower or "occ_mod" in path_lower or "occlusion" in path_lower or "terhalang" in path_lower:
+    if any(w in fn for w in ["occlusion", "tertutup", "terhalang", "occ_mod", "semak"]):
         return "Moderate Occlusion (20-50%)"
-    if "trunc" in path_lower or "terpotong" in path_lower or "crop" in path_lower:
+    if any(w in fn for w in ["trunc", "crop", "terpotong"]):
         return "Truncation (Terpotong Tepi)"
-    if "full" in path_lower or "utuh" in path_lower:
+    if any(w in fn for w in ["full", "utuh"]):
         return "Full Visibility"
 
-    # Proxy otomatis dari box
-    if gt_boxes:
+    # Penamaan khusus Zebra
+    if "zebra_felix" in fn:
+        return "Full Visibility"
+    if "zebra_ivy" in fn:
+        return "Truncation (Terpotong Tepi)"
+    if "zebra_bryan" in fn:
+        return "Moderate Occlusion (20-50%)"
+    if "zebra_joseph" in fn:
+        return "Severe Occlusion (>50%)"
+
+    # Penamaan khusus Badak (Joseph)
+    if "rhinoceros_occlusion" in fn:
+        return "Moderate Occlusion (20-50%)"
+    if "rhinoceros" in fn:
+        return "Full Visibility"
+
+    # Penamaan khusus Harimau (Bryan)
+    if "tiger_download" in fn:
+        return "Full Visibility"
+    if "tiger_occlusion" in fn:
+        return "Moderate Occlusion (20-50%)"
+
+    # Penamaan khusus Gajah (Felix): 1-20 Full, 21-30 Occlusion, 31-40 Truncation
+    m = re.search(r"elephant_felix_(\d+)", fn)
+    if m:
+        num = int(m.group(1))
+        if num <= 20:
+            return "Full Visibility"
+        elif num <= 30:
+            return "Moderate Occlusion (20-50%)"
+        else:
+            return "Truncation (Terpotong Tepi)"
+
+    # Penamaan khusus Jerapah (Ivy): 1-20 Full, 21-30 Occlusion, 31-40 Truncation
+    m = re.search(r"jerapah_(\d+)", fn)
+    if m:
+        num = int(m.group(1))
+        if num <= 20:
+            return "Full Visibility"
+        elif num <= 30:
+            return "Moderate Occlusion (20-50%)"
+        else:
+            return "Truncation (Terpotong Tepi)"
+
+    # Proxy otomatis jika ada koordinat box riil
+    if gt_boxes and gt_boxes[0].get("has_real_box", False):
         b = gt_boxes[0]["bbox"]
         margin = 0.015
         touches_edge = b[0] <= margin or b[1] <= margin or b[2] >= 1.0 - margin or b[3] >= 1.0 - margin
@@ -163,19 +246,18 @@ def determine_visual_condition(img_path, gt_boxes):
 def main():
     parser = argparse.ArgumentParser(description="Runner Otomatisasi Batch Testing 200 Kasus Visual ZooLens")
     parser.add_argument("--model", default="ai-service/best.pt", help="Path bobot model YOLO (.pt)")
-    parser.add_argument("--data", default="D:/Documents/Ezra/Kuliah/PCU/Smstr 5/Manpro/ZooLens Manpro/ZooLens_final", help="Path root dataset (mencari folder images/test)")
+    parser.add_argument("--data", default="D:/Documents/Ezra/Kuliah/PCU/Smstr 5/Manpro/ZooLens Manpro/test_200", help="Path dataset/folder citra")
     parser.add_argument("--images", default=None, help="Path alternatif folder citra langsung")
     parser.add_argument("--out", default="test_results_200", help="Folder output hasil pengujian")
     parser.add_argument("--conf", type=float, default=0.50, help="Confidence threshold minimum (default: 0.50)")
     parser.add_argument("--iou-thresh", type=float, default=0.45, help="IoU threshold untuk kecocokan deteksi (default: 0.45)")
-    parser.add_argument("--limit", type=int, default=200, help="Batas maksimum gambar yang diuji (default: 200)")
-    parser.add_argument("--balance-classes", action="store_true", default=True, help="Bagi rata sampel per kelas satwa (default: True)")
+    parser.add_argument("--limit", type=int, default=0, help="Batas maksimum gambar (0 = uji semua gambar yang ada)")
+    parser.add_argument("--balance-classes", action="store_true", default=False, help="Bagi rata sampel per kelas satwa")
     args = parser.parse_args()
 
     # 1. Validasi Model
     model_path = Path(args.model).resolve()
     if not model_path.is_file():
-        # Coba cari relatif
         alt_paths = [
             Path("ai-service/best.pt"),
             Path("../ai-service/best.pt"),
@@ -196,57 +278,28 @@ def main():
     # 2. Mengumpulkan Gambar
     image_paths = []
     label_dir = None
+    target_dir = args.images if (args.images and os.path.isdir(args.images)) else args.data
 
-    if args.images and os.path.isdir(args.images):
-        for ext in ["*.jpg", "*.jpeg", "*.png", "*.webp"]:
-            image_paths.extend(glob.glob(os.path.join(args.images, "**", ext), recursive=True))
-    elif args.data and os.path.isdir(args.data):
-        test_img_dir = os.path.join(args.data, "images", "test")
-        label_dir = os.path.join(args.data, "labels", "test")
+    if target_dir and os.path.isdir(target_dir):
+        test_img_dir = os.path.join(target_dir, "images", "test")
+        label_dir = os.path.join(target_dir, "labels", "test")
         if os.path.isdir(test_img_dir):
             for ext in ["*.jpg", "*.jpeg", "*.png", "*.webp"]:
                 image_paths.extend(glob.glob(os.path.join(test_img_dir, ext)))
         else:
             for ext in ["*.jpg", "*.jpeg", "*.png", "*.webp"]:
-                image_paths.extend(glob.glob(os.path.join(args.data, "**", ext), recursive=True))
+                image_paths.extend(glob.glob(os.path.join(target_dir, "**", ext), recursive=True))
 
     image_paths = sorted(list(set(image_paths)))
     if not image_paths:
-        sys.exit(f"[ERROR] Tidak ada gambar ditemukan untuk diuji di {args.data} atau {args.images}")
+        sys.exit(f"[ERROR] Tidak ada gambar ditemukan untuk diuji di: {target_dir}")
 
     total_available = len(image_paths)
 
-    # Menyeimbangkan sampel antarkelas jika diminta
-    if args.balance_classes and args.limit and len(image_paths) > args.limit:
-        by_class = {c: [] for c in CLASS_NAMES}
-        unclassified = []
-        for p in image_paths:
-            gt = detect_ground_truth(p, label_dir)
-            c = gt[0]["class_name"] if gt else "unknown"
-            if c in by_class:
-                by_class[c].append(p)
-            else:
-                unclassified.append(p)
-
-        target_per_class = max(1, args.limit // len(CLASS_NAMES))
-        selected = []
-        for c in CLASS_NAMES:
-            selected.extend(by_class[c][:target_per_class])
-
-        # Isi sisa kuota jika ada kelas yang sampelnya kurang dari target
-        shortfall = args.limit - len(selected)
-        if shortfall > 0:
-            remaining_pool = []
-            for c in CLASS_NAMES:
-                remaining_pool.extend(by_class[c][target_per_class:])
-            remaining_pool.extend(unclassified)
-            selected.extend(remaining_pool[:shortfall])
-
-        image_paths = sorted(selected)
-    elif args.limit and len(image_paths) > args.limit:
+    if args.limit and args.limit > 0 and len(image_paths) > args.limit:
         image_paths = image_paths[:args.limit]
 
-    print(f"[INFO] Ditemukan {total_available} citra. Menjalankan pengujian pada {len(image_paths)} citra terdistribusi...")
+    print(f"[INFO] Ditemukan {total_available} citra. Menjalankan pengujian pada {len(image_paths)} citra...")
 
     # 3. Menyiapkan Folder Output
     out_dir = Path(args.out).resolve()
@@ -268,6 +321,7 @@ def main():
         gt_list = detect_ground_truth(img_path, label_dir)
         gt_class = gt_list[0]["class_name"] if gt_list else "unknown"
         condition = determine_visual_condition(img_path, gt_list)
+        pic = determine_pic(img_path, gt_class)
 
         if condition not in stats_cond:
             stats_cond[condition] = {"total": 0, "TP": 0, "FP": 0, "FN": 0}
@@ -289,7 +343,6 @@ def main():
                     break
 
             conf_val = round(float(box.conf[0]), 4)
-            # Normalisasi koordinat bbox
             W, H = pred_res.orig_shape[1], pred_res.orig_shape[0]
             x1, y1, x2, y2 = box.xyxy[0].tolist()
             pred_boxes.append({
@@ -302,10 +355,12 @@ def main():
         # Evaluasi Status (TP, FP, FN)
         top_pred_class = "-"
         top_conf = 0.0
-        best_iou = 0.0
+        best_iou = "-"
         top_bbox = "-"
         status = "FN"
         failure_note_hint = ""
+
+        has_real_boxes = any(gt.get("has_real_box", False) for gt in gt_list)
 
         if not pred_boxes:
             status = "FN"
@@ -316,26 +371,39 @@ def main():
             top_conf = top_pred["confidence"]
             top_bbox = str(top_pred["bbox_raw"])
 
-            # Cek kecocokan dengan GT
-            matched = False
-            for gt in gt_list:
-                for pb in pred_boxes:
-                    iou_val = compute_iou(gt["bbox"], pb["bbox_norm"])
-                    if iou_val > best_iou:
-                        best_iou = round(iou_val, 3)
-                    if pb["class_name"] == gt["class_name"] and iou_val >= args.iou_thresh:
-                        matched = True
+            if has_real_boxes:
+                # Mode IoU jika ada ground truth bounding box
+                matched = False
+                iou_num = 0.0
+                for gt in gt_list:
+                    for pb in pred_boxes:
+                        v = compute_iou(gt["bbox"], pb["bbox_norm"])
+                        if v > iou_num:
+                            iou_num = round(v, 3)
+                        if pb["class_name"] == gt["class_name"] and v >= args.iou_thresh:
+                            matched = True
+                            break
+                    if matched:
                         break
-                if matched:
-                    break
 
-            if matched:
-                status = "TP"
-                failure_note_hint = "Deteksi tepat sesuai bounding box ground truth."
+                best_iou = iou_num if iou_num > 0 else "-"
+                if matched:
+                    status = "TP"
+                    failure_note_hint = "Deteksi tepat sesuai bounding box ground truth."
+                else:
+                    if top_pred_class == gt_class:
+                        status = "TP"
+                        failure_note_hint = f"Kelas tepat ({top_pred_class}), namun ada pergeseran box (IoU {best_iou})."
+                    else:
+                        status = "FP"
+                        failure_note_hint = f"Misklasifikasi: {gt_class} salah diprediksi sebagai {top_pred_class} ({int(top_conf * 100)}%)."
             else:
-                if top_pred_class == gt_class:
-                    status = "TP (IoU Rendah)"
-                    failure_note_hint = f"Kelas tepat ({top_pred_class}), namun pergeseran box (IoU {best_iou})."
+                # Mode Image-Level (Foto Google per folder kelas)
+                matching_preds = [pb for pb in pred_boxes if pb["class_name"] == gt_class]
+                if matching_preds:
+                    status = "TP"
+                    best_match = max(matching_preds, key=lambda x: x["confidence"])
+                    failure_note_hint = f"Deteksi berhasil: teridentifikasi sebagai {gt_class} ({int(best_match['confidence'] * 100)}%)."
                 else:
                     status = "FP"
                     failure_note_hint = f"Misklasifikasi: {gt_class} salah diprediksi sebagai {top_pred_class} ({int(top_conf * 100)}%)."
@@ -343,7 +411,7 @@ def main():
         # Update Statistik
         if gt_class in stats_class:
             stats_class[gt_class]["total"] += 1
-            if "TP" in status:
+            if status == "TP":
                 stats_class[gt_class]["TP"] += 1
             elif status == "FP":
                 stats_class[gt_class]["FP"] += 1
@@ -351,14 +419,12 @@ def main():
                 stats_class[gt_class]["FN"] += 1
 
         stats_cond[condition]["total"] += 1
-        if "TP" in status:
+        if status == "TP":
             stats_cond[condition]["TP"] += 1
         elif status == "FP":
             stats_cond[condition]["FP"] += 1
         else:
             stats_cond[condition]["FN"] += 1
-
-        pic = PIC_ASSIGNMENT.get(gt_class, "Aldo")
 
         results.append({
             "No": idx,
@@ -368,7 +434,7 @@ def main():
             "Prediksi_Model": top_pred_class,
             "Confidence": top_conf if top_conf > 0 else "-",
             "Status_Evaluasi": status,
-            "IoU": best_iou if best_iou > 0 else "-",
+            "IoU": best_iou,
             "Inference_ms": inf_ms,
             "Bounding_Box": top_bbox,
             "PIC_Review": pic,
@@ -378,7 +444,7 @@ def main():
     elapsed_total = round(time.time() - start_total_time, 2)
     avg_latency = round(sum(r["Inference_ms"] for r in results) / len(results), 2) if results else 0
 
-    # 5. Tulis File CSV (Dengan UTF-8 BOM untuk Microsoft Excel)
+    # 5. Tulis File CSV (UTF-8 BOM untuk Microsoft Excel)
     fieldnames = [
         "No", "Nama_File", "Satwa_Asli", "Kondisi_Visual", "Prediksi_Model",
         "Confidence", "Status_Evaluasi", "IoU", "Inference_ms", "Bounding_Box",
@@ -391,19 +457,31 @@ def main():
 
     # 6. Susun Laporan Markdown Ringkasan
     md_lines = [
-        "# Laporan Evaluasi Batch Testing 200 Kasus Visual ZooLens\n",
+        "# Laporan Evaluasi Batch Testing 200 Kasus Visual ZooLens\n\n",
         f"- **Model Weights:** `{model_path.name}`\n",
+        f"- **Folder Dataset:** `{Path(target_dir).name}`\n",
         f"- **Tanggal Pengujian:** {time.strftime('%d %B %Y')}\n",
         f"- **Total Citra Diuji:** {len(results)} citra\n",
         f"- **Durasi Total:** {elapsed_total} detik (Rata-rata inferensi: {avg_latency} ms/citra)\n",
         f"- **Confidence Threshold:** $\\ge$ {args.conf}\n\n",
-        "## 1. Performa per Kelas Satwa\n",
-        "| Kelas Satwa | Total Sampel | True Positive (TP) | False Negative (FN) | False Positive (FP) | Recall (%) | PIC Analisis |\n",
+        "## 1. Performa per Kelas Satwa\n\n",
+        "| Kelas Satwa | Total Sampel | True Positive (TP) | False Negative (FN) | False Positive (FP) | Accuracy / Recall (%) | PIC Analisis |\n",
         "|---|---|---|---|---|---|---|\n",
     ]
 
     total_tp = 0
     total_samples = 0
+    total_fn = 0
+    total_fp = 0
+
+    pic_by_class = {
+        "elephant": "Felix",
+        "giraffe": "Ivy",
+        "zebra": "Felix, Ivy, Bryan, Joseph",
+        "tiger": "Bryan",
+        "rhinoceros": "Joseph",
+    }
+
     for cname in CLASS_NAMES:
         st = stats_class[cname]
         tot = st["total"]
@@ -413,32 +491,36 @@ def main():
         recall = round((tp / tot * 100), 1) if tot > 0 else 0.0
         total_tp += tp
         total_samples += tot
-        pic = PIC_ASSIGNMENT.get(cname, "-")
+        total_fn += fn
+        total_fp += fp
+        pic = pic_by_class.get(cname, "-")
         md_lines.append(f"| **{cname}** | {tot} | {tp} | {fn} | {fp} | **{recall}%** | {pic} |\n")
 
     overall_recall = round((total_tp / total_samples * 100), 1) if total_samples > 0 else 0.0
-    md_lines.append(f"| **TOTAL** | **{total_samples}** | **{total_tp}** | **{total_samples - total_tp}** | - | **{overall_recall}%** | **Tim ZooLens** |\n\n")
+    md_lines.append(f"| **TOTAL** | **{total_samples}** | **{total_tp}** | **{total_fn}** | **{total_fp}** | **{overall_recall}%** | **Tim ZooLens** |\n\n")
 
     md_lines.extend([
-        "## 2. Performa per Kondisi Visual (Pembuktian Hipotesis Occlusion)\n",
-        "| Kondisi Visual | Total Uji | True Positive (TP) | False Negative (FN) | Recall (%) | Catatan Metodologi |\n",
-        "|---|---|---|---|---|---|\n",
+        "## 2. Performa per Kondisi Visual (Pembuktian Hipotesis Occlusion)\n\n",
+        "| Kondisi Visual | Total Uji | True Positive (TP) | False Negative (FN) | False Positive (FP) | Accuracy (%) | Catatan Analisis |\n",
+        "|---|---|---|---|---|---|---|\n",
     ])
 
     for cond, st in sorted(stats_cond.items()):
         tot = st["total"]
         tp = st["TP"]
         fn = st["FN"]
+        fp = st["FP"]
         recall = round((tp / tot * 100), 1) if tot > 0 else 0.0
-        md_lines.append(f"| **{cond}** | {tot} | {tp} | {fn} | **{recall}%** | Hipotesis teruji |\n")
+        md_lines.append(f"| **{cond}** | {tot} | {tp} | {fn} | {fp} | **{recall}%** | Hipotesis teruji |\n")
 
     md_lines.extend([
-        "\n## 3. Tindak Lanjut Anggota Tim\n",
+        "\n## 3. Tindak Lanjut Anggota Tim\n\n",
         "File CSV pengujian telah diekspor ke: `test_results_200.csv`.\n",
-        "1. **Felix:** Buka file CSV dan periksa baris satwa *elephant* (gajah).\n",
-        "2. **Ivy:** Buka file CSV dan periksa baris satwa *giraffe* dan *zebra*.\n",
-        "3. **Bryan:** Buka file CSV dan periksa baris satwa *tiger* dan *rhinoceros*.\n",
-        "4. **Aldo & Ezra:** Mengompilasi seluruh temuan ke bab Analisis Kegagalan untuk Presentasi UTS.\n",
+        "1. **Felix:** Buka file CSV, filter kolom `PIC_Review = Felix` (40 Gajah + 10 Zebra) -> periksa baris yang berstatus FN/FP dan isi catatan visualnya.\n",
+        "2. **Ivy:** Buka file CSV, filter kolom `PIC_Review = Ivy` (40 Jerapah + 10 Zebra) -> periksa baris yang berstatus FN/FP dan isi catatan visualnya.\n",
+        "3. **Bryan:** Buka file CSV, filter kolom `PIC_Review = Bryan` (44 Harimau + 11 Zebra) -> periksa baris yang berstatus FN/FP dan isi catatan visualnya.\n",
+        "4. **Joseph:** Buka file CSV, filter kolom `PIC_Review = Joseph` (40 Badak + 10 Zebra) -> periksa baris yang berstatus FN/FP dan isi catatan visualnya.\n",
+        "5. **Aldo & Ezra:** Mengompilasi seluruh temuan ke bab Analisis Kegagalan untuk Presentasi UTS.\n",
     ])
 
     with open(report_file, mode="w", encoding="utf-8") as f:
@@ -448,7 +530,8 @@ def main():
     print(f"[SUKSES] Pengujian batch selesai!")
     print(f"  -> File CSV Excel siap bagi tugas: {csv_file}")
     print(f"  -> Ringkasan Laporan Markdown:    {report_file}")
-    print(f"  -> Recall Keseluruhan:            {overall_recall}%")
+    print(f"  -> Akurasi/Recall Keseluruhan:    {overall_recall}% ({total_tp}/{total_samples})")
+    print(f"  -> Rincian: {total_tp} TP, {total_fn} FN, {total_fp} FP")
     print("=" * 60)
 
 
