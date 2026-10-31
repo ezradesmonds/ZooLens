@@ -2,7 +2,7 @@
 **Proyek:** ZooLens – Aplikasi Deteksi Satwa Interaktif (Kelompok 10)  
 **Penyusun:** Ezra Desmond Sutanto (Project Manager & Integration Lead)  
 **Dokumentasi untuk:** Aldo Kurniawan Tanjung (Sekretaris / QA & Documentation)  
-**Target Milestone:** Persiapan Laporan Lengkap UTS (3 November 2026)  
+**Target Milestone:** Persiapan Laporan Lengkap UTS (Senin, 2 November 2026)  
 
 ---
 
