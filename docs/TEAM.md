@@ -7,4 +7,4 @@
 - Ivy Isabella Limanto — Anggota: UI/UX, factsheet content and Safari flow.
 - Felix Valerian Sutanto — Anggota: Laravel, database, web implementation.
 
-Pembagian teknis ini adalah usulan awal dan perlu dikonfirmasi dalam rapat tim.
+Pembagian kerja telah dikonfirmasi dan dilaporkan dalam Laporan Milestone 1 (W1–W5 UTS). Detail work log dan tracker tersedia di Google Spreadsheet proyek.

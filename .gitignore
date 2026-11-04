@@ -27,6 +27,10 @@
 **/*.pt
 **/*.onnx
 
+# Logs
+*.log
+**/*.log
+
 # IDE
 .vscode/
 .idea/

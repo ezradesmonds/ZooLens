@@ -33,7 +33,17 @@ cd ai-service
 
 FastAPI docs: http://127.0.0.1:8001/docs ; health: http://127.0.0.1:8001/health
 
-**Penting:** endpoint `/predict` sengaja mengembalikan HTTP 503 sampai bobot model yang benar tersedia dan `MODEL_PATH` dikonfigurasi. Belum ada trained model, integrasi Laravel-FastAPI, halaman Scanner/Factsheet/Safari, ataupun deployment production di starter ini.
+## Status Milestone 1 (W1–W5 — UTS 2 November 2026)
+- **AI Microservice (`ai-service/`):** FastAPI di port 8001 aktif melayani inferensi real-time via `/predict` menggunakan bobot YOLO11n (`best.pt`). Dilengkapi unit tests (pytest lulus).
+- **Web Backend & UI (`backend/`):** Laravel 11 + Blade + Tailwind CDN di port 8000:
+  - Smart Animal Scanner (kamera langsung & unggah galeri) dengan overlay bounding box dinamis.
+  - Interactive Animal Factsheet untuk 5 satwa (*elephant, giraffe, zebra, tiger, rhinoceros*).
+  - Tampilan Zoo Digital Safari & Riwayat Deteksi.
+  - Skema database 4 tabel (`animals`, `badges`, `user_animals`, `detections`) dengan SQLite memory testing (11 tests lulus).
+- **Evaluasi & Pengujian ML (`ml/`):**
+  - Runner batch testing otomatis 200 citra (`ml/scripts/batch_test_200.py`).
+  - Hasil evaluasi oklusi dan pemotongan (truncation) tersimpan di `ml/test_results_200/`.
+  - Hipotesis pengujian dan kerangka analisis di `docs/HIPOTESIS_PENGUJIAN_200.md` dan `docs/LAPORAN_MILESTONE_1.md`.
 
 ## Git
 ```powershell
