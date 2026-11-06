@@ -11,11 +11,26 @@ Mata kuliah Manajemen Proyek TI · Dosen: Liliana, S.T., M.Eng., Ph.D.
 
 ## 1. Analisis Kebutuhan User
 
-**Pengguna:** pengunjung kebun binatang, pelajar, dan masyarakat umum.  
-**Masalah:** papan informasi statis mudah diabaikan, rusak oleh cuaca, dan tidak membantu saat satwa jauh, tertutup, atau hanya terlihat sebagian.  
-**Solusi:** aplikasi web yang mengenali satwa dari satu foto lalu menampilkan informasinya. Sumber kebutuhan: proposal dan Project Charter kelompok.
+### 1.1 Konteks: Pengunjung Kebun Binatang Surabaya (KBS)
+ZooLens dirancang berdasarkan kunjungan ke KBS. Pengguna utamanya adalah pengunjung umum, pelajar, dan keluarga. Mereka berjalan mengelilingi kebun binatang mengikuti jalur yang ada, berhenti di tiap area untuk melihat dan memotret satwa. Karena pengunjung terus bergerak mengikuti jalur, satwa yang terlewat sulit dilihat ulang, sehingga informasi satwa harus bisa didapat saat itu juga. Dari kondisi tersebut kelompok mengidentifikasi tiga masalah utama:
+1. **Satwa tertutup atau terhalang (occlusion):** Satwa sering tersembunyi di balik pagar, tanaman, atau satwa lain, sehingga pengunjung tidak puas dan sulit memastikan satwa apa yang dilihat atau difoto.
+2. **Papan informasi rusak:** Sebagian papan di KBS sudah agak rusak akibat hujan dan cuaca sehingga sulit dibaca; isinya juga statis dan mudah diabaikan.
+3. **Sulit mengulang:** Karena terus berjalan, pengunjung tidak mudah kembali ke satwa yang terlewat atau terhalang untuk membaca informasinya.
 
-| ID Kebutuhan | Kebutuhan Pengguna | Wujud Fitur | Status sampai 2 Nov 2026 |
+*(Gambar 1: Alur kunjungan di KBS dan titik ZooLens membantu)*
+
+### 1.2 User Story dan Alasan Fitur Menjawab Masalah
+
+| ID | User Story | Masalah yang Diselesaikan | Mengapa Fitur Ini Menjawab Masalah (Problem Solving) |
+|---|---|---|---|
+| **US1** | Sebagai pengunjung, saya ingin memotret satwa lalu langsung tahu nama dan faktanya, agar tidak bergantung pada papan yang rusak. | Papan informasi rusak / lapuk | **Smart Animal Scanner & Factsheet:** Menampilkan nama umum, nama ilmiah, habitat, pola makan, dan status konservasi IUCN langsung di layar HP secara mandiri tanpa bergantung pada papan fisik. |
+| **US2** | Sebagai pengunjung, saya ingin satwa yang sebagian tubuhnya tertutup tetap dikenali, agar kunjungan terasa memuaskan. | Satwa tertutup / terhalang (*occlusion & truncation*) | **Model YOLO11n Spesialis Oklusi:** Dilatih dan dievaluasi khusus pada citra satwa utuh, terhalang dahan/air, maupun terpotong frame dengan kotak deteksi dan skor confidence akurat. |
+| **US3** | Sebagai pengunjung yang terus bergerak mengikuti jalur, saya ingin informasi muncul seketika dari satu jepretan foto, agar tidak perlu putar balik. | Pengunjung terus berjalan / sulit mengulang rute | **Web App Instan Tanpa Install:** Cukup buka browser dan ambil 1 foto, inferensi FastAPI merespons cepat dengan batas toleransi API 10 detik. |
+| **US4** | Sebagai pelajar atau keluarga dengan anak, saya ingin tantangan mengoleksi satwa, agar aktivitas edukasi terasa seru dan interaktif. | Papan edukasi statis membosankan | **Zoo Digital Safari & Lencana:** Mengubah kunjungan pasif menjadi pencarian satwa interaktif dengan pembukaan lencana koleksi dan histori pemindaian. |
+
+*Batasan:* Sistem tidak menjamin deteksi bila mayoritas tubuh satwa tertutup ekstrem (>80%); skenario ini diuji secara ilmiah pada tahap evaluasi W6–W7.
+
+### 1.3 Kebutuhan Fungsional dan Status
 |---|---|---|---|
 | **K1** | Mengenali satwa dari satu foto (kamera atau galeri) | Smart Animal Scanner | **Berjalan.** Kamera dan unggah galeri; validasi jpg/png/webp, maks. 2 MB. |
 | **K2** | Melihat hasil deteksi yang jelas: kotak, nama, tingkat keyakinan | Model YOLO11n 5 kelas (*elephant, giraffe, zebra, tiger, rhinoceros*) + overlay bounding box | **Berjalan dengan API nyata sejak 26 Okt.** mAP50 0,940 (validasi). |
