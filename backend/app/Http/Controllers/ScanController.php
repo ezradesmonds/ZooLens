@@ -6,10 +6,11 @@ use App\Http\Requests\ScanRequest;
 use App\Services\FactsheetService;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use App\Services\CollectionService;
 
 class ScanController extends Controller
 {
-    public function store(ScanRequest $request, FactsheetService $factsheets)
+    public function store(ScanRequest $request, FactsheetService $factsheets, CollectionService $collection)
     {
         $file = $request->file('image');
         $aiServiceUrl = config('services.ai.url', 'http://127.0.0.1:8001');
@@ -46,13 +47,21 @@ class ScanController extends Controller
                 continue;
             }
 
+            $outcome = $collection->record(
+                $request->user(),
+                $animal,
+                $detection,
+                $aiResult['image_width'],
+                $aiResult['image_height']
+            );
+
             $detections[] = [
                 'class_id' => $detection['class_id'],
                 'confidence' => $detection['confidence'],
                 'bbox' => $detection['bbox'],
                 'animal' => $factsheets->format($animal),
-                'is_new_discovery' => false, // diisi di Week 6
-                'badge' => null,             // diisi di Week 6
+                'is_new_discovery' => $outcome['is_new_discovery'], // diisi di Week 6
+                'badge' => $outcome['badge'],             // diisi di Week 6
             ];
         }
 
@@ -72,7 +81,7 @@ class ScanController extends Controller
                 'height' => $aiResult['image_height'],
             ],
             'detections' => $detections,
-            'progress' => ['collected' => 0, 'total' => 5, 'percentage' => 0],
+            'progress' => $collection->progress($request->user()),
         ]);
     }
 }
