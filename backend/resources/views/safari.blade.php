@@ -76,7 +76,10 @@
                     {{-- Badge TERBUKA --}}
                     <article class="group flex flex-col items-center rounded-2xl border border-stone-200 bg-white p-4 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
                         <div class="relative grid h-24 w-24 place-items-center rounded-full bg-gradient-to-br {{ $grad }} text-5xl shadow-inner ring-4 {{ $ring }}">
-                            <i class="fa-solid fa-paw drop-shadow" aria-hidden="true"></i>
+                            @include('partials.animal-icon', [
+                                'key' => $a['key'],
+                                'class' => 'h-20 w-20',
+                            ])
                             <span class="absolute -bottom-1 -right-1 grid h-8 w-8 place-items-center rounded-full bg-emerald-500 text-sm font-bold text-white ring-2 ring-white"><i class="fa-solid fa-check" aria-hidden="true"></i></span>
                         </div>
                         <h3 class="mt-3 font-extrabold text-stone-900">{{ $a['name'] }}</h3>
@@ -89,7 +92,10 @@
                     {{-- Badge TERKUNCI --}}
                     <article class="flex flex-col items-center rounded-2xl border border-dashed border-stone-300 bg-stone-100/70 p-4 text-center" aria-label="{{ $a['name'] }} terkunci">
                         <div class="relative grid h-24 w-24 place-items-center rounded-full bg-stone-200 ring-4 ring-stone-100">
-                            <i class="fa-solid fa-paw text-stone-400 opacity-60" aria-hidden="true"></i>
+                            @include('partials.animal-icon',[
+                                'key' => $a['key'],
+                                'class' => 'h-20 w-20 grayscale opacity-40',
+                            ])
                             <span class="absolute inset-0 grid place-items-center rounded-full bg-stone-400/30">
                                 <svg class="h-9 w-9 text-stone-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a5 5 0 00-5 5v3H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2v-8a2 2 0 00-2-2h-1V7a5 5 0 00-5-5zm-3 8V7a3 3 0 116 0v3H9z"/></svg>
                             </span>
