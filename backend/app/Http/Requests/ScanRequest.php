@@ -16,7 +16,7 @@ class ScanRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'image' => ['required', 'file', 'image', 'mimes:jpg,jpeg,png,webp', 'max:2048'],
+            'image' => ['required', 'file', 'image', 'mimes:jpg,jpeg,png,webp', 'max:8192'],
         ];
     }
 
