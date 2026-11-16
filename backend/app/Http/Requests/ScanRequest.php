@@ -26,7 +26,7 @@ class ScanRequest extends FormRequest
             'image.required' => 'Gambar wajib diunggah.',
             'image.image' => 'File harus berupa gambar.',
             'image.mimes' => 'Format gambar harus jpg, png, atau webp.',
-            'image.max' => 'Ukuran gambar maksimal 2 MB.',
+            'image.max' => 'Ukuran gambar maksimal 8 MB.',
         ];
     }
 

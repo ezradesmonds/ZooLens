@@ -89,9 +89,9 @@ def health():
 async def predict(file: UploadFile = File(...)):
     if file.content_type not in ('image/jpeg', 'image/png', 'image/webp'):
         raise HTTPException(status_code=415, detail='JPEG, PNG, or WEBP required')
-    data = await file.read(10 * 1024 * 1024 + 1)
-    if len(data) > 10 * 1024 * 1024:
-        raise HTTPException(status_code=413, detail='Image exceeds 10 MB')
+    data = await file.read(8 * 1024 * 1024 + 1)
+    if len(data) > 8 * 1024 * 1024:
+        raise HTTPException(status_code=413, detail='Image exceeds 8 MB')
     try:
         image = Image.open(io.BytesIO(data)).convert('RGB')
     except Exception:
