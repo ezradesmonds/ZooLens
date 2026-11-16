@@ -34,3 +34,5 @@
 # IDE
 .vscode/
 .idea/
+# Lembar pratinjau cek visual (bisa dibuat ulang dengan preview_sheets.py)
+audit_out/review_v2/*.jpg
