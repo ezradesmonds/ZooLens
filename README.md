@@ -19,6 +19,23 @@ powershell -ExecutionPolicy Bypass -File scripts/init-laravel.ps1
 powershell -ExecutionPolicy Bypass -File scripts/setup-ai.ps1
 ```
 
+##  Setup Model AI (`ai-service`)
+
+Karena file bobot model (`*.pt`) dikecualikan dari Git melalui `.gitignore`, Anda wajib mengunduh bobot model secara manual sebelum menjalankan backend agar layanan tidak jatuh ke mode *mock* (`503 Model not installed`).
+
+### 1. Informasi Versi Model Aktif
+* **Versi Model:** `W6_cand1_yolo11n_adamw_lr0005` (Week 6 Final)
+* **Arsitektur:** YOLOv11n (`5.25 MB`)
+* **Kelas Target (5):** `elephant`, `giraffe`, `zebra`, `tiger`, `rhinoceros`
+* **Performa Validasi:** mAP50 `93.80%` | Precision `93.29%` | Recall `89.17%`
+
+### 2. Langkah Pemasangan Bobot (`best.pt`)
+1. Unduh file `best.pt` melalui tautan Google Drive berikut:  
+    **[Download best.pt (ZooLens YOLOv11n W6)](https://drive.google.com/file/d/1JkvMsmS5qIbyZBkRzUPsGD0qOPdrvZtk/view?usp=sharing)**
+2. Letakkan file `best.pt` ke dalam direktori model pada `ai-service`, misalnya:
+   ```text
+   ai-service/models/best.pt
+
 Terminal 1:
 ```powershell
 cd backend
