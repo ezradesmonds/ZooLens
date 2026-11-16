@@ -1,0 +1,251 @@
+file,kondisi,kondisi_awal
+P_elephant_001.jpg,Full,Full
+P_elephant_002.jpg,Occlusion ringan,Full
+P_elephant_003.jpg,Full,Full
+P_elephant_004.jpg,Full,Full
+P_elephant_005.jpg,Full,Full
+P_elephant_006.jpg,Full,Full
+P_elephant_007.jpg,Full,Full
+P_elephant_008.jpg,Full,Full
+P_elephant_009.jpg,Full,Full
+P_elephant_010.jpg,Occlusion ringan,Full
+P_elephant_011.jpg,Truncation,Truncation
+P_elephant_012.jpg,Truncation,Truncation
+P_elephant_013.jpg,Truncation,Truncation
+P_elephant_014.jpg,Truncation,Truncation
+P_elephant_015.jpg,Truncation,Truncation
+P_elephant_016.jpg,Truncation,Truncation
+P_elephant_017.jpg,Truncation,Truncation
+P_elephant_018.jpg,Truncation,Truncation
+P_elephant_019.jpg,Truncation,Truncation
+P_elephant_020.jpg,Truncation,Truncation
+P_elephant_021.jpg,Occlusion berat,Occlusion berat
+P_elephant_022.jpg,Occlusion berat,Occlusion berat
+P_elephant_023.jpg,Occlusion berat,Occlusion berat
+P_elephant_024.jpg,Occlusion berat,Occlusion berat
+P_elephant_025.jpg,Dikeluarkan,Occlusion berat
+P_elephant_026.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_027.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_028.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_029.jpg,Occlusion berat,Occlusion sedang
+P_elephant_030.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_031.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_032.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_033.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_034.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_035.jpg,Occlusion sedang,Occlusion sedang
+P_elephant_036.jpg,Occlusion ringan,Occlusion sedang
+P_elephant_037.jpg,Occlusion ringan,Occlusion sedang
+P_elephant_038.jpg,Occlusion ringan,Occlusion ringan
+P_elephant_039.jpg,Occlusion ringan,Occlusion ringan
+P_elephant_040.jpg,Occlusion ringan,Occlusion ringan
+P_elephant_041.jpg,Occlusion ringan,Occlusion ringan
+P_elephant_042.jpg,Full,Occlusion ringan
+P_elephant_043.jpg,Full,Occlusion ringan
+P_elephant_044.jpg,Full,Occlusion ringan
+P_elephant_045.jpg,Occlusion ringan,Occlusion ringan
+P_elephant_046.jpg,Full,Occlusion ringan
+P_elephant_047.jpg,Full,Occlusion ringan
+P_elephant_048.jpg,Occlusion ringan,Occlusion ringan
+P_elephant_049.jpg,Occlusion sedang,Occlusion ringan
+P_elephant_050.jpg,Full,Occlusion ringan
+P_giraffe_001.jpg,Dikeluarkan,Full
+P_giraffe_002.jpg,Occlusion ringan,Full
+P_giraffe_003.jpg,Occlusion ringan,Full
+P_giraffe_004.jpg,Occlusion ringan,Full
+P_giraffe_005.jpg,Full,Full
+P_giraffe_006.jpg,Full,Full
+P_giraffe_007.jpg,Full,Full
+P_giraffe_008.jpg,Truncation,Full
+P_giraffe_009.jpg,Truncation,Full
+P_giraffe_010.jpg,Occlusion ringan,Full
+P_giraffe_011.jpg,Truncation,Truncation
+P_giraffe_012.jpg,Truncation,Truncation
+P_giraffe_013.jpg,Truncation,Truncation
+P_giraffe_014.jpg,Truncation,Truncation
+P_giraffe_015.jpg,Truncation,Truncation
+P_giraffe_016.jpg,Truncation,Truncation
+P_giraffe_017.jpg,Truncation,Truncation
+P_giraffe_018.jpg,Truncation,Truncation
+P_giraffe_019.jpg,Truncation,Truncation
+P_giraffe_020.jpg,Truncation,Truncation
+P_giraffe_021.jpg,Occlusion berat,Occlusion berat
+P_giraffe_022.jpg,Dikeluarkan,Occlusion berat
+P_giraffe_023.jpg,Occlusion berat,Occlusion berat
+P_giraffe_024.jpg,Occlusion berat,Occlusion berat
+P_giraffe_025.jpg,Occlusion berat,Occlusion berat
+P_giraffe_026.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_027.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_028.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_029.jpg,Truncation,Occlusion sedang
+P_giraffe_030.jpg,Occlusion berat,Occlusion sedang
+P_giraffe_031.jpg,Truncation,Occlusion sedang
+P_giraffe_032.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_033.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_034.jpg,Occlusion berat,Occlusion sedang
+P_giraffe_035.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_036.jpg,Occlusion ringan,Occlusion sedang
+P_giraffe_037.jpg,Occlusion sedang,Occlusion sedang
+P_giraffe_038.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_039.jpg,Truncation,Occlusion ringan
+P_giraffe_040.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_041.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_042.jpg,Truncation,Occlusion ringan
+P_giraffe_043.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_044.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_045.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_046.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_047.jpg,Occlusion berat,Occlusion ringan
+P_giraffe_048.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_049.jpg,Occlusion ringan,Occlusion ringan
+P_giraffe_050.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_001.jpg,Full,Full
+P_zebra_002.jpg,Occlusion ringan,Full
+P_zebra_003.jpg,Truncation,Full
+P_zebra_004.jpg,Truncation,Full
+P_zebra_005.jpg,Occlusion ringan,Full
+P_zebra_006.jpg,Full,Full
+P_zebra_007.jpg,Full,Full
+P_zebra_008.jpg,Full,Full
+P_zebra_009.jpg,Occlusion ringan,Full
+P_zebra_010.jpg,Full,Full
+P_zebra_011.jpg,Full,Full
+P_zebra_012.jpg,Full,Full
+P_zebra_013.jpg,Occlusion ringan,Full
+P_zebra_014.jpg,Truncation,Truncation
+P_zebra_015.jpg,Truncation,Truncation
+P_zebra_016.jpg,Truncation,Truncation
+P_zebra_017.jpg,Truncation,Truncation
+P_zebra_018.jpg,Truncation,Truncation
+P_zebra_019.jpg,Truncation,Truncation
+P_zebra_020.jpg,Truncation,Truncation
+P_zebra_021.jpg,Truncation,Truncation
+P_zebra_022.jpg,Truncation,Truncation
+P_zebra_023.jpg,Truncation,Truncation
+P_zebra_024.jpg,Dikeluarkan,Occlusion berat
+P_zebra_025.jpg,Dikeluarkan,Occlusion berat
+P_zebra_026.jpg,Occlusion ringan,Occlusion berat
+P_zebra_027.jpg,Occlusion sedang,Occlusion berat
+P_zebra_028.jpg,Dikeluarkan,Occlusion sedang
+P_zebra_029.jpg,Occlusion sedang,Occlusion sedang
+P_zebra_030.jpg,Occlusion sedang,Occlusion sedang
+P_zebra_031.jpg,Occlusion sedang,Occlusion sedang
+P_zebra_032.jpg,Occlusion berat,Occlusion sedang
+P_zebra_033.jpg,Occlusion sedang,Occlusion sedang
+P_zebra_034.jpg,Occlusion sedang,Occlusion sedang
+P_zebra_035.jpg,Occlusion sedang,Occlusion ringan
+P_zebra_036.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_037.jpg,Full,Occlusion ringan
+P_zebra_038.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_039.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_040.jpg,Occlusion sedang,Occlusion ringan
+P_zebra_041.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_042.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_043.jpg,Truncation,Occlusion ringan
+P_zebra_044.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_045.jpg,Occlusion sedang,Occlusion ringan
+P_zebra_046.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_047.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_048.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_049.jpg,Occlusion ringan,Occlusion ringan
+P_zebra_050.jpg,Occlusion ringan,Occlusion ringan
+P_tiger_001.jpg,Truncation,Full
+P_tiger_002.jpg,Full,Full
+P_tiger_003.jpg,Truncation,Full
+P_tiger_004.jpg,Full,Full
+P_tiger_005.jpg,Occlusion ringan,Full
+P_tiger_006.jpg,Full,Full
+P_tiger_007.jpg,Truncation,Full
+P_tiger_008.jpg,Occlusion ringan,Full
+P_tiger_009.jpg,Full,Full
+P_tiger_010.jpg,Full,Full
+P_tiger_011.jpg,Truncation,Truncation
+P_tiger_012.jpg,Truncation,Truncation
+P_tiger_013.jpg,Truncation,Truncation
+P_tiger_014.jpg,Truncation,Truncation
+P_tiger_015.jpg,Truncation,Truncation
+P_tiger_016.jpg,Truncation,Truncation
+P_tiger_017.jpg,Truncation,Truncation
+P_tiger_018.jpg,Truncation,Truncation
+P_tiger_019.jpg,Truncation,Truncation
+P_tiger_020.jpg,Truncation,Truncation
+P_tiger_021.jpg,Occlusion berat,Occlusion berat
+P_tiger_022.jpg,Occlusion sedang,Occlusion berat
+P_tiger_023.jpg,Occlusion berat,Occlusion berat
+P_tiger_024.jpg,Occlusion berat,Occlusion berat
+P_tiger_025.jpg,Occlusion sedang,Occlusion berat
+P_tiger_026.jpg,Occlusion sedang,Occlusion berat
+P_tiger_027.jpg,Occlusion berat,Occlusion berat
+P_tiger_028.jpg,Occlusion sedang,Occlusion sedang
+P_tiger_029.jpg,Occlusion sedang,Occlusion sedang
+P_tiger_030.jpg,Occlusion berat,Occlusion sedang
+P_tiger_031.jpg,Occlusion ringan,Occlusion sedang
+P_tiger_032.jpg,Occlusion ringan,Occlusion sedang
+P_tiger_033.jpg,Occlusion sedang,Occlusion sedang
+P_tiger_034.jpg,Occlusion sedang,Occlusion sedang
+P_tiger_035.jpg,Truncation,Occlusion sedang
+P_tiger_036.jpg,Occlusion sedang,Occlusion sedang
+P_tiger_037.jpg,Occlusion ringan,Occlusion sedang
+P_tiger_038.jpg,Occlusion berat,Occlusion sedang
+P_tiger_039.jpg,Occlusion ringan,Occlusion sedang
+P_tiger_040.jpg,Full,Occlusion ringan
+P_tiger_041.jpg,Occlusion ringan,Occlusion ringan
+P_tiger_042.jpg,Occlusion ringan,Occlusion ringan
+P_tiger_043.jpg,Truncation,Occlusion ringan
+P_tiger_044.jpg,Occlusion sedang,Occlusion ringan
+P_tiger_045.jpg,Occlusion sedang,Occlusion ringan
+P_tiger_046.jpg,Occlusion sedang,Occlusion ringan
+P_tiger_047.jpg,Full,Occlusion ringan
+P_tiger_048.jpg,Occlusion sedang,Occlusion ringan
+P_tiger_049.jpg,Occlusion ringan,Occlusion ringan
+P_tiger_050.jpg,Occlusion ringan,Occlusion ringan
+P_rhinoceros_001.jpg,Full,Full
+P_rhinoceros_002.jpg,Full,Full
+P_rhinoceros_003.jpg,Full,Full
+P_rhinoceros_004.jpg,Full,Full
+P_rhinoceros_005.jpg,Full,Full
+P_rhinoceros_006.jpg,Full,Full
+P_rhinoceros_007.jpg,Full,Full
+P_rhinoceros_008.jpg,Occlusion sedang,Full
+P_rhinoceros_009.jpg,Full,Full
+P_rhinoceros_010.jpg,Full,Full
+P_rhinoceros_011.jpg,Truncation,Truncation
+P_rhinoceros_012.jpg,Truncation,Truncation
+P_rhinoceros_013.jpg,Truncation,Truncation
+P_rhinoceros_014.jpg,Truncation,Truncation
+P_rhinoceros_015.jpg,Truncation,Truncation
+P_rhinoceros_016.jpg,Truncation,Truncation
+P_rhinoceros_017.jpg,Truncation,Truncation
+P_rhinoceros_018.jpg,Truncation,Truncation
+P_rhinoceros_019.jpg,Truncation,Truncation
+P_rhinoceros_020.jpg,Truncation,Truncation
+P_rhinoceros_021.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_022.jpg,Dikeluarkan,Occlusion berat
+P_rhinoceros_023.jpg,Dikeluarkan,Occlusion berat
+P_rhinoceros_024.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_025.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_026.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_027.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_028.jpg,Dikeluarkan,Occlusion berat
+P_rhinoceros_029.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_030.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_031.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_032.jpg,Occlusion berat,Occlusion berat
+P_rhinoceros_033.jpg,Occlusion sedang,Occlusion sedang
+P_rhinoceros_034.jpg,Occlusion sedang,Occlusion sedang
+P_rhinoceros_035.jpg,Occlusion sedang,Occlusion sedang
+P_rhinoceros_036.jpg,Truncation,Occlusion sedang
+P_rhinoceros_037.jpg,Occlusion berat,Occlusion sedang
+P_rhinoceros_038.jpg,Occlusion ringan,Occlusion sedang
+P_rhinoceros_039.jpg,Occlusion ringan,Occlusion sedang
+P_rhinoceros_040.jpg,Occlusion sedang,Occlusion sedang
+P_rhinoceros_041.jpg,Occlusion sedang,Occlusion sedang
+P_rhinoceros_042.jpg,Occlusion sedang,Occlusion sedang
+P_rhinoceros_043.jpg,Occlusion berat,Occlusion sedang
+P_rhinoceros_044.jpg,Occlusion berat,Occlusion sedang
+P_rhinoceros_045.jpg,Occlusion ringan,Occlusion ringan
+P_rhinoceros_046.jpg,Full,Occlusion ringan
+P_rhinoceros_047.jpg,Occlusion ringan,Occlusion ringan
+P_rhinoceros_048.jpg,Occlusion ringan,Occlusion ringan
+P_rhinoceros_049.jpg,Occlusion sedang,Occlusion ringan
+P_rhinoceros_050.jpg,Full,Occlusion ringan
