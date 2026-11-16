@@ -17,7 +17,7 @@ class ScanUploadTest extends TestCase
         $this->post('/scan')->assertRedirect('/login');
     }
 
-    public function test_valid_image_is_accepted(): void
+    public function test_valid_image_passes_validation(): void
     {
         Http::fake(['*' => Http::response([
             'image_width' => 1280,
@@ -25,9 +25,11 @@ class ScanUploadTest extends TestCase
             'detections' => [],
         ])]);
 
+        // Lolos validasi upload; hasilnya "tidak ada satwa" (bukan invalid_image).
         $this->actingAs(User::factory()->create())
             ->postJson('/scan', ['image' => UploadedFile::fake()->image('foto.jpg')])
-            ->assertOk();
+            ->assertStatus(422)
+            ->assertJsonPath('code', 'no_animal_detected');
     }
 
     public function test_missing_image_is_rejected(): void
