@@ -19,7 +19,7 @@ powershell -ExecutionPolicy Bypass -File scripts/init-laravel.ps1
 powershell -ExecutionPolicy Bypass -File scripts/setup-ai.ps1
 ```
 
-###  Setup Model AI (`ai-service`)
+Setup Model AI (`ai-service`)
 
 Karena file bobot model (`*.pt`) dikecualikan dari Git melalui `.gitignore`, Anda wajib mengunduh bobot model secara manual sebelum menjalankan backend agar layanan tidak jatuh ke mode *mock* (`503 Model not installed`).
 
