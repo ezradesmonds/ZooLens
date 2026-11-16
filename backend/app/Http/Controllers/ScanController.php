@@ -2,31 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Exceptions\AiServiceException;
 use App\Http\Requests\ScanRequest;
 use App\Services\CollectionService;
 use App\Services\FactsheetService;
-use Illuminate\Support\Facades\Http;
+use App\Services\FastApiClient;
 use Illuminate\Support\Facades\Log;
 
 class ScanController extends Controller
 {
-    public function store(ScanRequest $request, FactsheetService $factsheets, CollectionService $collection)
-    {
-        $file = $request->file('image');
-        $aiServiceUrl = config('services.ai.url', 'http://127.0.0.1:8001');
-
+    public function store(
+        ScanRequest $request,
+        FastApiClient $ai,
+        FactsheetService $factsheets,
+        CollectionService $collection
+    ) {
         try {
-            $response = Http::timeout(10)
-                ->attach('file', file_get_contents($file->getRealPath()), $file->getClientOriginalName())
-                ->post($aiServiceUrl . '/predict');
-
-            if (! $response->successful()) {
-                throw new \Exception('AI service returned HTTP ' . $response->status());
-            }
-
-            $aiResult = $response->json();
-        } catch (\Throwable $e) {
-            Log::error('FastAPI tidak bisa dihubungi: ' . $e->getMessage());
+            $aiResult = $ai->predict($request->file('image'));
+        } catch (AiServiceException $e) {
+            Log::error('AI service error: ' . $e->getMessage());
 
             return response()->json([
                 'status' => 'error',
@@ -37,7 +31,7 @@ class ScanController extends Controller
 
         $detections = [];
 
-        foreach ($aiResult['detections'] ?? [] as $detection) {
+        foreach ($aiResult['detections'] as $detection) {
             $animal = $factsheets->findByClassId($detection['class_id']);
 
             if ($animal === null) {
