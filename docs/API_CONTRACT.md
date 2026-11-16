@@ -153,12 +153,20 @@ Model inferensi dan database backend menyepakati pemetaan `class_id` numerik (0â
 **Response Validasi Gagal (HTTP 422 Unprocessable Entity):**
 ```json
 {
-  "message": "Gambar tidak valid atau ukuran melebihi 2 MB.",
-  "errors": {
-    "image": [
-      "File harus berupa gambar (jpeg, png, webp).",
-      "Ukuran gambar maksimal 2048 KB."
-    ]
-  }
+  "status": "error",
+  "code": "invalid_image",
+  "message": "Gambar tidak valid atau ukuran melebihi 2 MB."
+}
+```
+
+**Response AI Service Tidak Tersedia (HTTP 503 Service Unavailable):**
+
+Dikembalikan saat FastAPI tidak bisa dihubungi (mati, timeout, atau membalas error). Tidak ada fallback mock.
+
+```json
+{
+  "status": "error",
+  "code": "ai_unavailable",
+  "message": "Error 503: backend FastAPI sedang down."
 }
 ```
