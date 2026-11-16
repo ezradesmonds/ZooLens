@@ -46,10 +46,10 @@ class ScanUploadTest extends TestCase
             ->assertJsonPath('code', 'invalid_image');
     }
 
-    public function test_image_over_2mb_is_rejected(): void
+    public function test_image_over_8mb_is_rejected(): void
     {
         $this->actingAs(User::factory()->create())
-            ->postJson('/scan', ['image' => UploadedFile::fake()->create('besar.jpg', 3000, 'image/jpeg')])
+            ->postJson('/scan', ['image' => UploadedFile::fake()->create('besar.jpg', 9000, 'image/jpeg')])
             ->assertStatus(422)
             ->assertJsonPath('code', 'invalid_image');
     }

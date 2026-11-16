@@ -9,7 +9,7 @@ Dokumen kontrak resmi antarmuka data (API Contract) antara **Laravel Backend** d
 ```
 [ Frontend (Blade + JS) ]
            │
-           │ (1) POST /scan (multipart image, maks 2 MB)
+           │ (1) POST /scan (multipart image, maks 8 MB)
            ▼
 [ Laravel Backend ] ──(2) POST /predict (multipart file)──► [ FastAPI Service ]
                     ◄──(3) JSON detections (class_id, bbox)─┤ (YOLO11n Model)
@@ -102,7 +102,7 @@ Model inferensi dan database backend menyepakati pemetaan `class_id` numerik (0�
 * **Content-Type:** `multipart/form-data`
 
 **Request Body:**
-* `image`: File gambar kamera/galeri (jpg, jpeg, png, webp). Maksimal 2048 KB (2 MB).
+* `image`: File gambar kamera/galeri (jpg, jpeg, png, webp). Maksimal 8192 KB (8 MB).
 
 **Response Sukses (HTTP 200 OK):**
 ```json
@@ -155,7 +155,7 @@ Model inferensi dan database backend menyepakati pemetaan `class_id` numerik (0�
 {
   "status": "error",
   "code": "invalid_image",
-  "message": "Gambar tidak valid atau ukuran melebihi 2 MB."
+  "message": "Gambar tidak valid atau ukuran melebihi 8 MB."
 }
 ```
 
