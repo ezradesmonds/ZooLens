@@ -64,14 +64,14 @@ class FactsheetTest extends TestCase
             ->assertJsonPath('detections.0.animal.common_name', 'Tiger');
     }
 
-    public function test_scan_returns_unknown_class_when_animal_missing(): void
+    public function test_scan_returns_422_when_animal_missing(): void
     {
         $this->fakeAi(99);
 
         $this->actingAs(User::factory()->create())
             ->postJson('/scan', ['image' => UploadedFile::fake()->image('foto.jpg')])
-            ->assertOk()
+            ->assertStatus(422)
             ->assertJsonPath('status', 'error')
-            ->assertJsonPath('code', 'unknown_class');
+            ->assertJsonPath('code', 'no_animal_detected');
     }
 }

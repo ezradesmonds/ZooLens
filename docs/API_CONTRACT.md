@@ -141,11 +141,11 @@ Model inferensi dan database backend menyepakati pemetaan `class_id` numerik (0â
 }
 ```
 
-**Response Tidak Ada Satwa / Unknown (HTTP 200 OK):**
+**Response Tidak Ada Satwa yang Dikenali (HTTP 422 Unprocessable Entity):**
 ```json
 {
   "status": "error",
-  "code": "unknown_class",
+  "code": "no_animal_detected",
   "message": "Satwa tidak dikenali."
 }
 ```

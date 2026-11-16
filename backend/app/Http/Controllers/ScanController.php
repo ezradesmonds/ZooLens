@@ -59,9 +59,9 @@ class ScanController extends Controller
         if ($detections === []) {
             return response()->json([
                 'status' => 'error',
-                'code' => 'unknown_class',
+                'code' => 'no_animal_detected',
                 'message' => 'Satwa tidak dikenali.',
-            ]);
+            ], 422);
         }
 
         return response()->json([
