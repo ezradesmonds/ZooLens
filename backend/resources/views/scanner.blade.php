@@ -451,7 +451,7 @@
         const data = await res.json();
 
         if (data.status === 'error') {
-            return { detections: [] };
+            throw new Error(data.message || 'Satwa tidak dikenali.');
         }
 
         const CLASS_MAP = {
@@ -465,7 +465,7 @@
         const imgH = (data.image && data.image.height) || currentImg.naturalHeight;
 
         const convertedDets = (data.detections || []).map((d) => {
-            const clsName = d.class || CLASS_MAP[d.class_id] || (d.animal && d.animal.common_name ? d.animal.common_name.toLowerCase() : 'elephant');
+            const clsName = d.class || CLASS_MAP[d.class_id] || (d.animal && d.animal.common_name ? d.animal.common_name.toLowerCase() : null);
             let bbox = d.bbox;
             if (Array.isArray(bbox) && bbox.length === 4) {
                 const [x1, y1, x2, y2] = bbox;
