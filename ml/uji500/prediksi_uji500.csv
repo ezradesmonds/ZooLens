@@ -1,0 +1,501 @@
+no,file,kelas_prediksi,confidence,jumlah_deteksi,semua_deteksi
+1,P_elephant_001.jpg,,,0,
+2,P_elephant_002.jpg,,,0,
+3,P_elephant_003.jpg,elephant,0.6076,1,elephant 0.61
+4,P_elephant_004.jpg,,,0,
+5,P_elephant_005.jpg,elephant,0.8164,1,elephant 0.82
+6,P_elephant_006.jpg,elephant,0.9178,1,elephant 0.92
+7,P_elephant_007.jpg,elephant,0.7715,1,elephant 0.77
+8,P_elephant_008.jpg,elephant,0.8224,1,elephant 0.82
+9,P_elephant_009.jpg,,,0,
+10,P_elephant_010.jpg,giraffe,0.7525,1,giraffe 0.75
+11,P_elephant_011.jpg,,,0,
+12,P_elephant_012.jpg,tiger,0.5203,1,tiger 0.52
+13,P_elephant_013.jpg,elephant,0.5925,1,elephant 0.59
+14,P_elephant_014.jpg,,,0,
+15,P_elephant_015.jpg,elephant,0.8006,1,elephant 0.80
+16,P_elephant_016.jpg,elephant,0.6068,1,elephant 0.61
+17,P_elephant_017.jpg,giraffe,0.6745,1,giraffe 0.67
+18,P_elephant_018.jpg,elephant,0.6406,1,elephant 0.64
+19,P_elephant_019.jpg,,,0,
+20,P_elephant_020.jpg,elephant,0.9054,1,elephant 0.91
+21,P_elephant_021.jpg,,,0,
+22,P_elephant_022.jpg,,,0,
+23,P_elephant_023.jpg,tiger,0.8613,1,tiger 0.86
+24,P_elephant_024.jpg,,,0,
+25,P_elephant_025.jpg,zebra,0.8285,1,zebra 0.83
+26,P_elephant_026.jpg,elephant,0.8184,1,elephant 0.82
+27,P_elephant_027.jpg,,,0,
+28,P_elephant_028.jpg,elephant,0.6428,2,elephant 0.64; giraffe 0.61
+29,P_elephant_029.jpg,,,0,
+30,P_elephant_030.jpg,elephant,0.8038,1,elephant 0.80
+31,P_elephant_031.jpg,,,0,
+32,P_elephant_032.jpg,,,0,
+33,P_elephant_033.jpg,,,0,
+34,P_elephant_034.jpg,,,0,
+35,P_elephant_035.jpg,elephant,0.7552,1,elephant 0.76
+36,P_elephant_036.jpg,,,0,
+37,P_elephant_037.jpg,,,0,
+38,P_elephant_038.jpg,,,0,
+39,P_elephant_039.jpg,,,0,
+40,P_elephant_040.jpg,elephant,0.5682,1,elephant 0.57
+41,P_elephant_041.jpg,,,0,
+42,P_elephant_042.jpg,elephant,0.8337,1,elephant 0.83
+43,P_elephant_043.jpg,elephant,0.7875,1,elephant 0.79
+44,P_elephant_044.jpg,elephant,0.8590,1,elephant 0.86
+45,P_elephant_045.jpg,elephant,0.8814,1,elephant 0.88
+46,P_elephant_046.jpg,elephant,0.6043,1,elephant 0.60
+47,P_elephant_047.jpg,elephant,0.7778,1,elephant 0.78
+48,P_elephant_048.jpg,elephant,0.8350,2,elephant 0.84; elephant 0.57
+49,P_elephant_049.jpg,zebra,0.5170,1,zebra 0.52
+50,P_elephant_050.jpg,,,0,
+51,P_giraffe_001.jpg,giraffe,0.8679,1,giraffe 0.87
+52,P_giraffe_002.jpg,giraffe,0.9120,1,giraffe 0.91
+53,P_giraffe_003.jpg,giraffe,0.8844,1,giraffe 0.88
+54,P_giraffe_004.jpg,giraffe,0.7966,1,giraffe 0.80
+55,P_giraffe_005.jpg,giraffe,0.9003,1,giraffe 0.90
+56,P_giraffe_006.jpg,giraffe,0.8116,1,giraffe 0.81
+57,P_giraffe_007.jpg,giraffe,0.8569,1,giraffe 0.86
+58,P_giraffe_008.jpg,giraffe,0.9055,1,giraffe 0.91
+59,P_giraffe_009.jpg,giraffe,0.8280,1,giraffe 0.83
+60,P_giraffe_010.jpg,giraffe,0.9030,1,giraffe 0.90
+61,P_giraffe_011.jpg,giraffe,0.8166,1,giraffe 0.82
+62,P_giraffe_012.jpg,giraffe,0.8948,1,giraffe 0.89
+63,P_giraffe_013.jpg,giraffe,0.9164,1,giraffe 0.92
+64,P_giraffe_014.jpg,giraffe,0.8765,1,giraffe 0.88
+65,P_giraffe_015.jpg,giraffe,0.8118,1,giraffe 0.81
+66,P_giraffe_016.jpg,giraffe,0.8971,1,giraffe 0.90
+67,P_giraffe_017.jpg,giraffe,0.8412,1,giraffe 0.84
+68,P_giraffe_018.jpg,giraffe,0.8550,1,giraffe 0.85
+69,P_giraffe_019.jpg,giraffe,0.8853,1,giraffe 0.89
+70,P_giraffe_020.jpg,giraffe,0.9297,1,giraffe 0.93
+71,P_giraffe_021.jpg,giraffe,0.7234,1,giraffe 0.72
+72,P_giraffe_022.jpg,giraffe,0.8743,1,giraffe 0.87
+73,P_giraffe_023.jpg,giraffe,0.8577,1,giraffe 0.86
+74,P_giraffe_024.jpg,,,0,
+75,P_giraffe_025.jpg,giraffe,0.8261,1,giraffe 0.83
+76,P_giraffe_026.jpg,giraffe,0.8718,1,giraffe 0.87
+77,P_giraffe_027.jpg,giraffe,0.8699,1,giraffe 0.87
+78,P_giraffe_028.jpg,,,0,
+79,P_giraffe_029.jpg,giraffe,0.7809,1,giraffe 0.78
+80,P_giraffe_030.jpg,giraffe,0.6249,1,giraffe 0.62
+81,P_giraffe_031.jpg,giraffe,0.8679,1,giraffe 0.87
+82,P_giraffe_032.jpg,giraffe,0.7472,1,giraffe 0.75
+83,P_giraffe_033.jpg,giraffe,0.8974,1,giraffe 0.90
+84,P_giraffe_034.jpg,giraffe,0.7602,1,giraffe 0.76
+85,P_giraffe_035.jpg,giraffe,0.8651,1,giraffe 0.87
+86,P_giraffe_036.jpg,giraffe,0.8725,1,giraffe 0.87
+87,P_giraffe_037.jpg,giraffe,0.8510,1,giraffe 0.85
+88,P_giraffe_038.jpg,giraffe,0.8929,1,giraffe 0.89
+89,P_giraffe_039.jpg,giraffe,0.8503,1,giraffe 0.85
+90,P_giraffe_040.jpg,giraffe,0.9165,1,giraffe 0.92
+91,P_giraffe_041.jpg,giraffe,0.7817,1,giraffe 0.78
+92,P_giraffe_042.jpg,giraffe,0.8812,1,giraffe 0.88
+93,P_giraffe_043.jpg,giraffe,0.6631,1,giraffe 0.66
+94,P_giraffe_044.jpg,giraffe,0.8946,1,giraffe 0.89
+95,P_giraffe_045.jpg,giraffe,0.8275,1,giraffe 0.83
+96,P_giraffe_046.jpg,giraffe,0.8720,1,giraffe 0.87
+97,P_giraffe_047.jpg,,,0,
+98,P_giraffe_048.jpg,giraffe,0.8876,1,giraffe 0.89
+99,P_giraffe_049.jpg,giraffe,0.8853,1,giraffe 0.89
+100,P_giraffe_050.jpg,giraffe,0.8732,1,giraffe 0.87
+101,P_zebra_001.jpg,zebra,0.9130,1,zebra 0.91
+102,P_zebra_002.jpg,zebra,0.9463,1,zebra 0.95
+103,P_zebra_003.jpg,zebra,0.9145,1,zebra 0.91
+104,P_zebra_004.jpg,zebra,0.7969,1,zebra 0.80
+105,P_zebra_005.jpg,zebra,0.8618,1,zebra 0.86
+106,P_zebra_006.jpg,zebra,0.9166,3,zebra 0.92; zebra 0.92; zebra 0.86
+107,P_zebra_007.jpg,zebra,0.8658,1,zebra 0.87
+108,P_zebra_008.jpg,zebra,0.8714,1,zebra 0.87
+109,P_zebra_009.jpg,zebra,0.8807,1,zebra 0.88
+110,P_zebra_010.jpg,zebra,0.8365,1,zebra 0.84
+111,P_zebra_011.jpg,zebra,0.8274,1,zebra 0.83
+112,P_zebra_012.jpg,zebra,0.8940,1,zebra 0.89
+113,P_zebra_013.jpg,zebra,0.8545,1,zebra 0.85
+114,P_zebra_014.jpg,zebra,0.9084,1,zebra 0.91
+115,P_zebra_015.jpg,giraffe,0.5526,1,giraffe 0.55
+116,P_zebra_016.jpg,zebra,0.9324,1,zebra 0.93
+117,P_zebra_017.jpg,zebra,0.7570,1,zebra 0.76
+118,P_zebra_018.jpg,zebra,0.8161,2,zebra 0.82; zebra 0.65
+119,P_zebra_019.jpg,zebra,0.8561,1,zebra 0.86
+120,P_zebra_020.jpg,zebra,0.7027,1,zebra 0.70
+121,P_zebra_021.jpg,zebra,0.9291,1,zebra 0.93
+122,P_zebra_022.jpg,zebra,0.5831,1,zebra 0.58
+123,P_zebra_023.jpg,zebra,0.9080,1,zebra 0.91
+124,P_zebra_024.jpg,rhinoceros,0.5505,2,rhinoceros 0.55; zebra 0.50
+125,P_zebra_025.jpg,,,0,
+126,P_zebra_026.jpg,zebra,0.7815,1,zebra 0.78
+127,P_zebra_027.jpg,zebra,0.6724,1,zebra 0.67
+128,P_zebra_028.jpg,zebra,0.6921,1,zebra 0.69
+129,P_zebra_029.jpg,,,0,
+130,P_zebra_030.jpg,zebra,0.8979,1,zebra 0.90
+131,P_zebra_031.jpg,zebra,0.7457,1,zebra 0.75
+132,P_zebra_032.jpg,zebra,0.7934,1,zebra 0.79
+133,P_zebra_033.jpg,zebra,0.9078,1,zebra 0.91
+134,P_zebra_034.jpg,zebra,0.9005,1,zebra 0.90
+135,P_zebra_035.jpg,zebra,0.8475,1,zebra 0.85
+136,P_zebra_036.jpg,zebra,0.8762,1,zebra 0.88
+137,P_zebra_037.jpg,zebra,0.8996,1,zebra 0.90
+138,P_zebra_038.jpg,zebra,0.9027,5,zebra 0.90; zebra 0.90; zebra 0.87; zebra 0.84; zebra 0.81
+139,P_zebra_039.jpg,zebra,0.8908,1,zebra 0.89
+140,P_zebra_040.jpg,zebra,0.8359,12,zebra 0.84; zebra 0.83; zebra 0.81; zebra 0.77; zebra 0.77; zebra 0.71; zebra 0.70; zebra 0.61; zebra 0.58; zebra 0.57; zebra 0.57; zebra 0.51
+141,P_zebra_041.jpg,zebra,0.8188,1,zebra 0.82
+142,P_zebra_042.jpg,zebra,0.9244,9,zebra 0.92; zebra 0.91; zebra 0.90; zebra 0.88; zebra 0.87; zebra 0.78; zebra 0.68; zebra 0.65; zebra 0.62
+143,P_zebra_043.jpg,zebra,0.8886,1,zebra 0.89
+144,P_zebra_044.jpg,zebra,0.8805,1,zebra 0.88
+145,P_zebra_045.jpg,zebra,0.8942,1,zebra 0.89
+146,P_zebra_046.jpg,zebra,0.5838,1,zebra 0.58
+147,P_zebra_047.jpg,zebra,0.8829,1,zebra 0.88
+148,P_zebra_048.jpg,zebra,0.8777,1,zebra 0.88
+149,P_zebra_049.jpg,zebra,0.8873,10,zebra 0.89; zebra 0.85; zebra 0.84; zebra 0.84; zebra 0.80; zebra 0.76; zebra 0.71; zebra 0.67; zebra 0.63; zebra 0.57
+150,P_zebra_050.jpg,zebra,0.6469,1,zebra 0.65
+151,P_tiger_001.jpg,tiger,0.7842,1,tiger 0.78
+152,P_tiger_002.jpg,tiger,0.8217,1,tiger 0.82
+153,P_tiger_003.jpg,zebra,0.8058,1,zebra 0.81
+154,P_tiger_004.jpg,tiger,0.8202,1,tiger 0.82
+155,P_tiger_005.jpg,tiger,0.7828,1,tiger 0.78
+156,P_tiger_006.jpg,tiger,0.7529,1,tiger 0.75
+157,P_tiger_007.jpg,zebra,0.9158,1,zebra 0.92
+158,P_tiger_008.jpg,tiger,0.7230,1,tiger 0.72
+159,P_tiger_009.jpg,tiger,0.8349,1,tiger 0.83
+160,P_tiger_010.jpg,tiger,0.8447,1,tiger 0.84
+161,P_tiger_011.jpg,tiger,0.7998,2,tiger 0.80; zebra 0.55
+162,P_tiger_012.jpg,zebra,0.8038,1,zebra 0.80
+163,P_tiger_013.jpg,zebra,0.5587,1,zebra 0.56
+164,P_tiger_014.jpg,giraffe,0.6974,1,giraffe 0.70
+165,P_tiger_015.jpg,tiger,0.7496,1,tiger 0.75
+166,P_tiger_016.jpg,giraffe,0.7079,1,giraffe 0.71
+167,P_tiger_017.jpg,tiger,0.5710,1,tiger 0.57
+168,P_tiger_018.jpg,tiger,0.6392,1,tiger 0.64
+169,P_tiger_019.jpg,,,0,
+170,P_tiger_020.jpg,,,0,
+171,P_tiger_021.jpg,giraffe,0.5111,1,giraffe 0.51
+172,P_tiger_022.jpg,tiger,0.6348,1,tiger 0.63
+173,P_tiger_023.jpg,tiger,0.7249,1,tiger 0.72
+174,P_tiger_024.jpg,,,0,
+175,P_tiger_025.jpg,tiger,0.7616,1,tiger 0.76
+176,P_tiger_026.jpg,,,0,
+177,P_tiger_027.jpg,,,0,
+178,P_tiger_028.jpg,tiger,0.8076,1,tiger 0.81
+179,P_tiger_029.jpg,,,0,
+180,P_tiger_030.jpg,tiger,0.7349,2,tiger 0.73; tiger 0.61
+181,P_tiger_031.jpg,tiger,0.6918,1,tiger 0.69
+182,P_tiger_032.jpg,tiger,0.8219,1,tiger 0.82
+183,P_tiger_033.jpg,,,0,
+184,P_tiger_034.jpg,tiger,0.6877,1,tiger 0.69
+185,P_tiger_035.jpg,,,0,
+186,P_tiger_036.jpg,,,0,
+187,P_tiger_037.jpg,tiger,0.6949,1,tiger 0.69
+188,P_tiger_038.jpg,tiger,0.8327,1,tiger 0.83
+189,P_tiger_039.jpg,tiger,0.7858,1,tiger 0.79
+190,P_tiger_040.jpg,tiger,0.8152,1,tiger 0.82
+191,P_tiger_041.jpg,zebra,0.6461,2,zebra 0.65; tiger 0.61
+192,P_tiger_042.jpg,tiger,0.7582,1,tiger 0.76
+193,P_tiger_043.jpg,tiger,0.8507,1,tiger 0.85
+194,P_tiger_044.jpg,tiger,0.6723,2,tiger 0.67; tiger 0.64
+195,P_tiger_045.jpg,,,0,
+196,P_tiger_046.jpg,tiger,0.7768,1,tiger 0.78
+197,P_tiger_047.jpg,tiger,0.8433,1,tiger 0.84
+198,P_tiger_048.jpg,tiger,0.5081,1,tiger 0.51
+199,P_tiger_049.jpg,tiger,0.8255,1,tiger 0.83
+200,P_tiger_050.jpg,tiger,0.7488,1,tiger 0.75
+201,P_rhinoceros_001.jpg,,,0,
+202,P_rhinoceros_002.jpg,rhinoceros,0.5798,1,rhinoceros 0.58
+203,P_rhinoceros_003.jpg,,,0,
+204,P_rhinoceros_004.jpg,,,0,
+205,P_rhinoceros_005.jpg,rhinoceros,0.7043,1,rhinoceros 0.70
+206,P_rhinoceros_006.jpg,,,0,
+207,P_rhinoceros_007.jpg,,,0,
+208,P_rhinoceros_008.jpg,rhinoceros,0.8415,1,rhinoceros 0.84
+209,P_rhinoceros_009.jpg,rhinoceros,0.8473,1,rhinoceros 0.85
+210,P_rhinoceros_010.jpg,rhinoceros,0.8194,1,rhinoceros 0.82
+211,P_rhinoceros_011.jpg,,,0,
+212,P_rhinoceros_012.jpg,rhinoceros,0.5103,1,rhinoceros 0.51
+213,P_rhinoceros_013.jpg,,,0,
+214,P_rhinoceros_014.jpg,,,0,
+215,P_rhinoceros_015.jpg,elephant,0.6987,1,elephant 0.70
+216,P_rhinoceros_016.jpg,rhinoceros,0.5215,1,rhinoceros 0.52
+217,P_rhinoceros_017.jpg,,,0,
+218,P_rhinoceros_018.jpg,rhinoceros,0.6761,1,rhinoceros 0.68
+219,P_rhinoceros_019.jpg,rhinoceros,0.7544,1,rhinoceros 0.75
+220,P_rhinoceros_020.jpg,,,0,
+221,P_rhinoceros_021.jpg,,,0,
+222,P_rhinoceros_022.jpg,,,0,
+223,P_rhinoceros_023.jpg,,,0,
+224,P_rhinoceros_024.jpg,giraffe,0.6515,1,giraffe 0.65
+225,P_rhinoceros_025.jpg,,,0,
+226,P_rhinoceros_026.jpg,,,0,
+227,P_rhinoceros_027.jpg,,,0,
+228,P_rhinoceros_028.jpg,,,0,
+229,P_rhinoceros_029.jpg,,,0,
+230,P_rhinoceros_030.jpg,,,0,
+231,P_rhinoceros_031.jpg,giraffe,0.8133,1,giraffe 0.81
+232,P_rhinoceros_032.jpg,,,0,
+233,P_rhinoceros_033.jpg,tiger,0.5046,1,tiger 0.50
+234,P_rhinoceros_034.jpg,tiger,0.5056,1,tiger 0.51
+235,P_rhinoceros_035.jpg,,,0,
+236,P_rhinoceros_036.jpg,elephant,0.6056,1,elephant 0.61
+237,P_rhinoceros_037.jpg,,,0,
+238,P_rhinoceros_038.jpg,,,0,
+239,P_rhinoceros_039.jpg,rhinoceros,0.7229,1,rhinoceros 0.72
+240,P_rhinoceros_040.jpg,,,0,
+241,P_rhinoceros_041.jpg,,,0,
+242,P_rhinoceros_042.jpg,rhinoceros,0.7466,1,rhinoceros 0.75
+243,P_rhinoceros_043.jpg,rhinoceros,0.6454,1,rhinoceros 0.65
+244,P_rhinoceros_044.jpg,,,0,
+245,P_rhinoceros_045.jpg,elephant,0.7682,1,elephant 0.77
+246,P_rhinoceros_046.jpg,,,0,
+247,P_rhinoceros_047.jpg,,,0,
+248,P_rhinoceros_048.jpg,rhinoceros,0.5073,1,rhinoceros 0.51
+249,P_rhinoceros_049.jpg,rhinoceros,0.7538,1,rhinoceros 0.75
+250,P_rhinoceros_050.jpg,,,0,
+251,N_vegetasi_001.jpg,,,0,
+252,N_vegetasi_002.jpg,,,0,
+253,N_vegetasi_003.jpg,,,0,
+254,N_vegetasi_004.jpg,,,0,
+255,N_vegetasi_005.jpg,,,0,
+256,N_vegetasi_006.jpg,,,0,
+257,N_vegetasi_007.jpg,,,0,
+258,N_vegetasi_008.jpg,,,0,
+259,N_vegetasi_009.jpg,,,0,
+260,N_vegetasi_010.jpg,,,0,
+261,N_vegetasi_011.jpg,,,0,
+262,N_vegetasi_012.jpg,,,0,
+263,N_vegetasi_013.jpg,,,0,
+264,N_vegetasi_014.jpg,,,0,
+265,N_vegetasi_015.jpg,,,0,
+266,N_vegetasi_016.jpg,,,0,
+267,N_vegetasi_017.jpg,,,0,
+268,N_vegetasi_018.jpg,,,0,
+269,N_vegetasi_019.jpg,,,0,
+270,N_vegetasi_020.jpg,,,0,
+271,N_vegetasi_021.jpg,,,0,
+272,N_vegetasi_022.jpg,,,0,
+273,N_vegetasi_023.jpg,,,0,
+274,N_vegetasi_024.jpg,,,0,
+275,N_vegetasi_025.jpg,,,0,
+276,N_vegetasi_026.jpg,zebra,0.5513,1,zebra 0.55
+277,N_vegetasi_027.jpg,,,0,
+278,N_vegetasi_028.jpg,,,0,
+279,N_vegetasi_029.jpg,,,0,
+280,N_vegetasi_030.jpg,elephant,0.6462,1,elephant 0.65
+281,N_vegetasi_031.jpg,,,0,
+282,N_vegetasi_032.jpg,,,0,
+283,N_vegetasi_033.jpg,,,0,
+284,N_vegetasi_034.jpg,giraffe,0.7079,2,giraffe 0.71; giraffe 0.51
+285,N_vegetasi_035.jpg,,,0,
+286,N_vegetasi_036.jpg,,,0,
+287,N_vegetasi_037.jpg,,,0,
+288,N_vegetasi_038.jpg,,,0,
+289,N_vegetasi_039.jpg,,,0,
+290,N_vegetasi_040.jpg,,,0,
+291,N_vegetasi_041.jpg,,,0,
+292,N_vegetasi_042.jpg,,,0,
+293,N_vegetasi_043.jpg,,,0,
+294,N_vegetasi_044.jpg,,,0,
+295,N_vegetasi_045.jpg,,,0,
+296,N_vegetasi_046.jpg,,,0,
+297,N_vegetasi_047.jpg,,,0,
+298,N_vegetasi_048.jpg,,,0,
+299,N_vegetasi_049.jpg,giraffe,0.6041,1,giraffe 0.60
+300,N_vegetasi_050.jpg,,,0,
+301,N_vegetasi_051.jpg,,,0,
+302,N_vegetasi_052.jpg,,,0,
+303,N_vegetasi_053.jpg,,,0,
+304,N_vegetasi_054.jpg,,,0,
+305,N_vegetasi_055.jpg,,,0,
+306,N_vegetasi_056.jpg,,,0,
+307,N_vegetasi_057.jpg,,,0,
+308,N_vegetasi_058.jpg,,,0,
+309,N_vegetasi_059.jpg,,,0,
+310,N_vegetasi_060.jpg,giraffe,0.6854,1,giraffe 0.69
+311,N_vegetasi_061.jpg,,,0,
+312,N_vegetasi_062.jpg,,,0,
+313,N_vegetasi_063.jpg,,,0,
+314,N_vegetasi_064.jpg,giraffe,0.5389,1,giraffe 0.54
+315,N_vegetasi_065.jpg,,,0,
+316,N_vegetasi_066.jpg,elephant,0.5480,1,elephant 0.55
+317,N_vegetasi_067.jpg,,,0,
+318,N_vegetasi_068.jpg,,,0,
+319,N_vegetasi_069.jpg,,,0,
+320,N_vegetasi_070.jpg,,,0,
+321,N_vegetasi_071.jpg,,,0,
+322,N_vegetasi_072.jpg,,,0,
+323,N_vegetasi_073.jpg,,,0,
+324,N_vegetasi_074.jpg,,,0,
+325,N_vegetasi_075.jpg,giraffe,0.7274,1,giraffe 0.73
+326,N_vegetasi_076.jpg,,,0,
+327,N_vegetasi_077.jpg,,,0,
+328,N_vegetasi_078.jpg,,,0,
+329,N_vegetasi_079.jpg,,,0,
+330,N_vegetasi_080.jpg,,,0,
+331,N_vegetasi_081.jpg,,,0,
+332,N_vegetasi_082.jpg,,,0,
+333,N_vegetasi_083.jpg,,,0,
+334,N_vegetasi_084.jpg,,,0,
+335,N_vegetasi_085.jpg,,,0,
+336,N_vegetasi_086.jpg,,,0,
+337,N_vegetasi_087.jpg,,,0,
+338,N_vegetasi_088.jpg,,,0,
+339,N_vegetasi_089.jpg,elephant,0.7622,1,elephant 0.76
+340,N_vegetasi_090.jpg,,,0,
+341,N_vegetasi_091.jpg,,,0,
+342,N_vegetasi_092.jpg,,,0,
+343,N_vegetasi_093.jpg,,,0,
+344,N_vegetasi_094.jpg,,,0,
+345,N_vegetasi_095.jpg,,,0,
+346,N_vegetasi_096.jpg,,,0,
+347,N_vegetasi_097.jpg,zebra,0.6694,1,zebra 0.67
+348,N_vegetasi_098.jpg,,,0,
+349,N_vegetasi_099.jpg,,,0,
+350,N_vegetasi_100.jpg,,,0,
+351,N_hewan_lain_001.jpg,elephant,0.6251,2,elephant 0.63; elephant 0.61
+352,N_hewan_lain_002.jpg,,,0,
+353,N_hewan_lain_003.jpg,zebra,0.7705,1,zebra 0.77
+354,N_hewan_lain_004.jpg,,,0,
+355,N_hewan_lain_005.jpg,giraffe,0.6933,1,giraffe 0.69
+356,N_hewan_lain_006.jpg,,,0,
+357,N_hewan_lain_007.jpg,giraffe,0.5220,1,giraffe 0.52
+358,N_hewan_lain_008.jpg,giraffe,0.6620,1,giraffe 0.66
+359,N_hewan_lain_009.jpg,giraffe,0.9024,1,giraffe 0.90
+360,N_hewan_lain_010.jpg,elephant,0.7764,1,elephant 0.78
+361,N_hewan_lain_011.jpg,,,0,
+362,N_hewan_lain_012.jpg,tiger,0.6934,1,tiger 0.69
+363,N_hewan_lain_013.jpg,elephant,0.8436,1,elephant 0.84
+364,N_hewan_lain_014.jpg,giraffe,0.7937,1,giraffe 0.79
+365,N_hewan_lain_015.jpg,,,0,
+366,N_hewan_lain_016.jpg,giraffe,0.5330,1,giraffe 0.53
+367,N_hewan_lain_017.jpg,elephant,0.8041,1,elephant 0.80
+368,N_hewan_lain_018.jpg,giraffe,0.6397,1,giraffe 0.64
+369,N_hewan_lain_019.jpg,,,0,
+370,N_hewan_lain_020.jpg,,,0,
+371,N_hewan_lain_021.jpg,tiger,0.6357,1,tiger 0.64
+372,N_hewan_lain_022.jpg,rhinoceros,0.5628,1,rhinoceros 0.56
+373,N_hewan_lain_023.jpg,tiger,0.7170,1,tiger 0.72
+374,N_hewan_lain_024.jpg,giraffe,0.5813,1,giraffe 0.58
+375,N_hewan_lain_025.jpg,elephant,0.7921,1,elephant 0.79
+376,N_hewan_lain_026.jpg,elephant,0.8899,2,elephant 0.89; elephant 0.86
+377,N_hewan_lain_027.jpg,,,0,
+378,N_hewan_lain_028.jpg,,,0,
+379,N_hewan_lain_029.jpg,,,0,
+380,N_hewan_lain_030.jpg,zebra,0.7743,1,zebra 0.77
+381,N_hewan_lain_031.jpg,giraffe,0.7607,1,giraffe 0.76
+382,N_hewan_lain_032.jpg,,,0,
+383,N_hewan_lain_033.jpg,,,0,
+384,N_hewan_lain_034.jpg,,,0,
+385,N_hewan_lain_035.jpg,tiger,0.6213,1,tiger 0.62
+386,N_hewan_lain_036.jpg,giraffe,0.6751,1,giraffe 0.68
+387,N_hewan_lain_037.jpg,,,0,
+388,N_hewan_lain_038.jpg,,,0,
+389,N_hewan_lain_039.jpg,giraffe,0.7854,1,giraffe 0.79
+390,N_hewan_lain_040.jpg,rhinoceros,0.8240,1,rhinoceros 0.82
+391,N_hewan_lain_041.jpg,,,0,
+392,N_hewan_lain_042.jpg,,,0,
+393,N_hewan_lain_043.jpg,giraffe,0.7215,1,giraffe 0.72
+394,N_hewan_lain_044.jpg,,,0,
+395,N_hewan_lain_045.jpg,,,0,
+396,N_hewan_lain_046.jpg,,,0,
+397,N_hewan_lain_047.jpg,elephant,0.6966,1,elephant 0.70
+398,N_hewan_lain_048.jpg,giraffe,0.7965,1,giraffe 0.80
+399,N_hewan_lain_049.jpg,,,0,
+400,N_hewan_lain_050.jpg,elephant,0.6546,2,elephant 0.65; elephant 0.56
+401,N_hewan_lain_051.jpg,tiger,0.7383,3,tiger 0.74; tiger 0.58; giraffe 0.52
+402,N_hewan_lain_052.jpg,giraffe,0.8557,1,giraffe 0.86
+403,N_hewan_lain_053.jpg,,,0,
+404,N_hewan_lain_054.jpg,,,0,
+405,N_hewan_lain_055.jpg,zebra,0.9559,1,zebra 0.96
+406,N_hewan_lain_056.jpg,,,0,
+407,N_hewan_lain_057.jpg,tiger,0.7316,1,tiger 0.73
+408,N_hewan_lain_058.jpg,tiger,0.5271,1,tiger 0.53
+409,N_hewan_lain_059.jpg,rhinoceros,0.5864,1,rhinoceros 0.59
+410,N_hewan_lain_060.jpg,,,0,
+411,N_hewan_lain_061.jpg,giraffe,0.6084,1,giraffe 0.61
+412,N_hewan_lain_062.jpg,giraffe,0.6516,1,giraffe 0.65
+413,N_hewan_lain_063.jpg,tiger,0.6229,1,tiger 0.62
+414,N_hewan_lain_064.jpg,,,0,
+415,N_hewan_lain_065.jpg,elephant,0.7037,1,elephant 0.70
+416,N_hewan_lain_066.jpg,tiger,0.5402,1,tiger 0.54
+417,N_hewan_lain_067.jpg,,,0,
+418,N_hewan_lain_068.jpg,,,0,
+419,N_hewan_lain_069.jpg,,,0,
+420,N_hewan_lain_070.jpg,,,0,
+421,N_hewan_lain_071.jpg,tiger,0.8212,1,tiger 0.82
+422,N_hewan_lain_072.jpg,giraffe,0.5191,1,giraffe 0.52
+423,N_hewan_lain_073.jpg,,,0,
+424,N_hewan_lain_074.jpg,zebra,0.6393,1,zebra 0.64
+425,N_hewan_lain_075.jpg,,,0,
+426,N_hewan_lain_076.jpg,,,0,
+427,N_hewan_lain_077.jpg,,,0,
+428,N_hewan_lain_078.jpg,,,0,
+429,N_hewan_lain_079.jpg,,,0,
+430,N_hewan_lain_080.jpg,,,0,
+431,N_hewan_lain_081.jpg,giraffe,0.8282,1,giraffe 0.83
+432,N_hewan_lain_082.jpg,,,0,
+433,N_hewan_lain_083.jpg,elephant,0.5475,1,elephant 0.55
+434,N_hewan_lain_084.jpg,giraffe,0.7104,1,giraffe 0.71
+435,N_hewan_lain_085.jpg,giraffe,0.8595,1,giraffe 0.86
+436,N_hewan_lain_086.jpg,,,0,
+437,N_hewan_lain_087.jpg,,,0,
+438,N_hewan_lain_088.jpg,,,0,
+439,N_hewan_lain_089.jpg,tiger,0.8473,1,tiger 0.85
+440,N_hewan_lain_090.jpg,giraffe,0.7428,1,giraffe 0.74
+441,N_hewan_lain_091.jpg,,,0,
+442,N_hewan_lain_092.jpg,,,0,
+443,N_hewan_lain_093.jpg,rhinoceros,0.6979,1,rhinoceros 0.70
+444,N_hewan_lain_094.jpg,,,0,
+445,N_hewan_lain_095.jpg,,,0,
+446,N_hewan_lain_096.jpg,,,0,
+447,N_hewan_lain_097.jpg,,,0,
+448,N_hewan_lain_098.jpg,,,0,
+449,N_hewan_lain_099.jpg,,,0,
+450,N_hewan_lain_100.jpg,,,0,
+451,N_objek_001.jpg,tiger,0.6996,1,tiger 0.70
+452,N_objek_002.jpg,,,0,
+453,N_objek_003.jpg,,,0,
+454,N_objek_004.jpg,elephant,0.5054,1,elephant 0.51
+455,N_objek_005.jpg,,,0,
+456,N_objek_006.jpg,,,0,
+457,N_objek_007.jpg,,,0,
+458,N_objek_008.jpg,tiger,0.7031,1,tiger 0.70
+459,N_objek_009.jpg,,,0,
+460,N_objek_010.jpg,tiger,0.6914,1,tiger 0.69
+461,N_objek_011.jpg,,,0,
+462,N_objek_012.jpg,,,0,
+463,N_objek_013.jpg,,,0,
+464,N_objek_014.jpg,,,0,
+465,N_objek_015.jpg,,,0,
+466,N_objek_016.jpg,,,0,
+467,N_objek_017.jpg,,,0,
+468,N_objek_018.jpg,,,0,
+469,N_objek_019.jpg,,,0,
+470,N_objek_020.jpg,,,0,
+471,N_objek_021.jpg,,,0,
+472,N_objek_022.jpg,,,0,
+473,N_objek_023.jpg,,,0,
+474,N_objek_024.jpg,,,0,
+475,N_objek_025.jpg,giraffe,0.7552,1,giraffe 0.76
+476,N_objek_026.jpg,,,0,
+477,N_objek_027.jpg,,,0,
+478,N_objek_028.jpg,,,0,
+479,N_objek_029.jpg,,,0,
+480,N_objek_030.jpg,,,0,
+481,N_objek_031.jpg,,,0,
+482,N_objek_032.jpg,,,0,
+483,N_objek_033.jpg,,,0,
+484,N_objek_034.jpg,,,0,
+485,N_objek_035.jpg,,,0,
+486,N_objek_036.jpg,,,0,
+487,N_objek_037.jpg,,,0,
+488,N_objek_038.jpg,,,0,
+489,N_objek_039.jpg,,,0,
+490,N_objek_040.jpg,,,0,
+491,N_objek_041.jpg,zebra,0.6642,1,zebra 0.66
+492,N_objek_042.jpg,,,0,
+493,N_objek_043.jpg,,,0,
+494,N_objek_044.jpg,,,0,
+495,N_objek_045.jpg,,,0,
+496,N_objek_046.jpg,,,0,
+497,N_objek_047.jpg,,,0,
+498,N_objek_048.jpg,,,0,
+499,N_objek_049.jpg,,,0,
+500,N_objek_050.jpg,,,0,
