@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Services\FactsheetService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Http;
 use Tests\TestCase;
 
 class FactsheetTest extends TestCase
@@ -23,6 +24,17 @@ class FactsheetTest extends TestCase
             'diet' => 'test',
             'iucn_status' => 'EN',
         ]);
+    }
+
+    private function fakeAi(int $classId): void
+    {
+        Http::fake(['*' => Http::response([
+            'image_width' => 1280,
+            'image_height' => 960,
+            'detections' => [
+                ['class_id' => $classId, 'confidence' => 0.91, 'bbox' => [100, 80, 300, 260]],
+            ],
+        ])]);
     }
 
     public function test_finds_animal_by_class_id(): void
@@ -43,6 +55,7 @@ class FactsheetTest extends TestCase
     public function test_scan_returns_factsheet_for_known_class(): void
     {
         $this->makeTiger();
+        $this->fakeAi(3);
 
         $this->actingAs(User::factory()->create())
             ->postJson('/scan', ['image' => UploadedFile::fake()->image('foto.jpg')])
@@ -51,12 +64,14 @@ class FactsheetTest extends TestCase
             ->assertJsonPath('detections.0.animal.common_name', 'Tiger');
     }
 
-    public function test_scan_returns_unknown_class_when_animal_missing(): void
+    public function test_scan_returns_422_when_animal_missing(): void
     {
+        $this->fakeAi(99);
+
         $this->actingAs(User::factory()->create())
             ->postJson('/scan', ['image' => UploadedFile::fake()->image('foto.jpg')])
-            ->assertOk()
+            ->assertStatus(422)
             ->assertJsonPath('status', 'error')
-            ->assertJsonPath('code', 'unknown_class');
+            ->assertJsonPath('code', 'no_animal_detected');
     }
 }
