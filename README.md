@@ -19,22 +19,21 @@ powershell -ExecutionPolicy Bypass -File scripts/init-laravel.ps1
 powershell -ExecutionPolicy Bypass -File scripts/setup-ai.ps1
 ```
 
-Setup Model AI (`ai-service`)
+Setup Bobot Model AI (Wajib sebelum menjalankan `ai-service`)
+Karena file bobot (`*.pt`) dikecualikan dari Git melalui `.gitignore`, unduh dan konfigurasi bobot model secara manual agar endpoint `/predict` tidak mengembalikan status `503 'Model not installed'` maupun jatuh ke mode *mock*:
 
-Karena file bobot model (`*.pt`) dikecualikan dari Git melalui `.gitignore`, Anda wajib mengunduh bobot model secara manual sebelum menjalankan backend agar layanan tidak jatuh ke mode *mock* (`503 Model not installed`).
-
-### 1. Informasi Versi Model Aktif
-* **Versi Model:** `W6_cand1_yolo11n_adamw_lr0005` (Week 6 Final)
-* **Arsitektur:** YOLOv11n (`5.25 MB`)
-* **Kelas Target (5):** `elephant`, `giraffe`, `zebra`, `tiger`, `rhinoceros`
-* **Performa Validasi:** mAP50 `93.80%` | Precision `93.29%` | Recall `89.17%`
-
-### 2. Langkah Pemasangan Bobot (`best.pt`)
-1. Unduh file `best.pt` melalui tautan Google Drive berikut:  
-    **[Download best.pt (ZooLens YOLOv11n W6)](https://drive.google.com/file/d/1JkvMsmS5qIbyZBkRzUPsGD0qOPdrvZtk/view?usp=sharing)**
-2. Letakkan file `best.pt` ke dalam direktori model pada `ai-service`, misalnya:
-   ```text
-   ai-service/models/best.pt
+* **Versi Model Aktif:** `W6_cand1_yolo11n_adamw_lr0005` (Arsitektur `YOLOv11n`, ukuran `5.25 MB`, mAP50 `93.80%`, 5 kelas: `elephant`, `giraffe`, `zebra`, `tiger`, `rhinoceros`)
+* **Info Training:** 30 epoch, data `ZooLens_final` (train 2.076 / val 261), *pretrained* dari `best.pt` EXP-02 (`AdamW`, `lr0=0.0005`)
+* **Tautan Unduh Bobot (`best.pt`):** [Download best.pt via Google Drive](https://drive.google.com/file/d/1JkvMsmS5qIbyZBkRzUPsGD0qOPdrvZtk/view?usp=sharing)
+* **Letak Penyimpanan Bobot:** Buat folder `models/` di dalam `ai-service/` (jika belum ada) dan simpan file `best.pt` pada path berikut:
+  ```text
+  ai-service/models/best.pt
+  ```
+* **Set `MODEL_PATH` di `ai-service/.env` (Wajib):** Salin `ai-service/.env.example` menjadi `ai-service/.env` (jika belum ada), lalu pastikan baris berikut diisi:
+  ```env
+  MODEL_PATH=models/best.pt
+  ```
+  > **Catatan:** Nilai *default* `MODEL_PATH` adalah `yolo11n.pt`. Jika tidak diubah ke `models/best.pt` di `ai-service/.env`, FastAPI akan tetap mengembalikan `503` meskipun file `best.pt` sudah ditaruh di folder `ai-service/models/`.
 
 Terminal 1:
 ```powershell
