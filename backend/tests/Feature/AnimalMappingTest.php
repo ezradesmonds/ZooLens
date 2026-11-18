@@ -29,6 +29,7 @@ class AnimalMappingTest extends TestCase
             $this->assertNotNull($animal, "class_id {$classId} tidak punya satwa");
             $this->assertSame($name, $animal->common_name);
             $this->assertNotNull($animal->badge, "{$name} tidak punya badge");
+            $this->assertSame(strtolower($name), $animal->badge->icon, "{$name} icon badge tidak sesuai kunci");
 
             foreach (['scientific_name', 'habitat', 'diet', 'iucn_status'] as $field) {
                 $this->assertNotContains($animal->{$field}, ['TODO', '--', ''], "{$name}.{$field} belum diisi");

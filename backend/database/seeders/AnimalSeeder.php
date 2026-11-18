@@ -69,7 +69,7 @@ class AnimalSeeder extends Seeder
                 [
                     'name' => 'Lencana '.$animal->common_name,
                     'description' => 'Berhasil menemukan '.$animal->common_name.'.',
-                    'icon' => 'TODO', // bagian Ivy
+                    'icon' => strtolower($animal->common_name), 
                 ]
             );
         }

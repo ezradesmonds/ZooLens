@@ -129,7 +129,7 @@ Model inferensi dan database backend menyepakati pemetaan `class_id` numerik (0â
       "badge": {
         "name": "Lencana Gajah",
         "description": "Berhasil menemukan Gajah.",
-        "icon": "badges/elephant.svg"
+        "icon": "elephant"
       }
     }
   ],
