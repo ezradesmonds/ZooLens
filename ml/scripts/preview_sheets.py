@@ -11,7 +11,7 @@ import argparse, csv
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-COLORS = ['orange', 'cyan', 'magenta', 'lime', 'red']  # ID terpadu 0..4
+COLORS = ['orange', 'cyan', 'magenta', 'lime', 'red', 'white']  # ID terpadu 0..4, 5 = non_class
 
 ap = argparse.ArgumentParser()
 ap.add_argument('--images', required=True); ap.add_argument('--labels', required=True)
@@ -19,6 +19,7 @@ ap.add_argument('--out', required=True); ap.add_argument('--prefix', required=Tr
 ap.add_argument('--only-labeled', action='store_true', help='lewati gambar tanpa file label')
 ap.add_argument('--cols', type=int, default=6); ap.add_argument('--rows', type=int, default=4)
 ap.add_argument('--tile', type=int, default=230)
+ap.add_argument('--files', help='CSV berkolom file + ditandai; hanya gambar dengan ditandai=1 yang ditampilkan')
 a = ap.parse_args()
 
 
@@ -48,6 +49,9 @@ def nested(bs):
 imgs = sorted(p for p in Path(a.images).iterdir() if p.suffix.lower() in ('.jpg', '.jpeg', '.png'))
 if a.only_labeled:
     imgs = [p for p in imgs if (Path(a.labels) / (p.stem + '.txt')).exists()]
+if a.files:
+    keep = {r['file'] for r in csv.DictReader(open(a.files, encoding='utf-8')) if r.get('ditandai', '1') == '1'}
+    imgs = [p for p in imgs if p.name in keep]
 out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
 font = ImageFont.load_default(size=20)
 per, T = a.cols * a.rows, a.tile
@@ -61,7 +65,7 @@ for s in range(0, len(imgs), per):
         im = Image.open(p).convert('RGB'); im.thumbnail((T - 6, T - 6)); W, H = im.size
         d = ImageDraw.Draw(im)
         for c, x0, y0, x1, y1 in bs:
-            d.rectangle([x0 * W, y0 * H, x1 * W, y1 * H], outline=COLORS[c % 5], width=3)
+            d.rectangle([x0 * W, y0 * H, x1 * W, y1 * H], outline=COLORS[c % 6], width=3)
         tile = Image.new('RGB', (T, T), 'gold' if flag else 'white'); tile.paste(im, (3, 3))
         d = ImageDraw.Draw(tile)
         d.rectangle([3, 3, 3 + 11 * len(str(n)) + 8, 27], fill='black'); d.text((7, 4), str(n), fill='white', font=font)

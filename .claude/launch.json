@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "koreksi-badak",
+      "runtimeExecutable": "D:/Project/zoolens-venv/Scripts/python.exe",
+      "runtimeArgs": ["-m", "http.server", "8765", "--bind", "127.0.0.1", "--directory", "D:/Project/DataSetZoo/ZooLens/badak_inaturalist"],
+      "port": 8765
+    },
+    {
+      "name": "koreksi-harimau",
+      "runtimeExecutable": "D:/Project/zoolens-venv/Scripts/python.exe",
+      "runtimeArgs": ["-m", "http.server", "8766", "--bind", "127.0.0.1", "--directory", "D:/Project/DataSetZoo/ZooLens/harimau_inaturalist"],
+      "port": 8766
+    }
+  ]
+}

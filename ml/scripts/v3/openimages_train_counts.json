@@ -1,0 +1,3011 @@
+{
+ "rows": 14610229,
+ "per_class": {
+  "/m/01g317": {
+   "boxes": 1034721,
+   "images": 248384,
+   "clean_images": 212988
+  },
+  "/m/0284d": {
+   "boxes": 8146,
+   "images": 2909,
+   "clean_images": 2888
+  },
+  "/m/04bcr3": {
+   "boxes": 85691,
+   "images": 44845,
+   "clean_images": 44250
+  },
+  "/m/0fszt": {
+   "boxes": 5784,
+   "images": 3720,
+   "clean_images": 3445
+  },
+  "/m/0hnyx": {
+   "boxes": 5852,
+   "images": 1141,
+   "clean_images": 1099
+  },
+  "/m/0cgh4": {
+   "boxes": 178634,
+   "images": 104007,
+   "clean_images": 87185
+  },
+  "/m/0d4v4": {
+   "boxes": 503467,
+   "images": 59833,
+   "clean_images": 56924
+  },
+  "/m/03bt1vf": {
+   "boxes": 767337,
+   "images": 265635,
+   "clean_images": 248684
+  },
+  "/m/0k4j": {
+   "boxes": 248075,
+   "images": 89465,
+   "clean_images": 82004
+  },
+  "/m/0pg52": {
+   "boxes": 4199,
+   "images": 1434,
+   "clean_images": 1427
+  },
+  "/m/014sv8": {
+   "boxes": 77233,
+   "images": 23743,
+   "clean_images": 21292
+  },
+  "/m/01n4qj": {
+   "boxes": 7465,
+   "images": 5217,
+   "clean_images": 5102
+  },
+  "/m/0283dt1": {
+   "boxes": 44197,
+   "images": 24454,
+   "clean_images": 22147
+  },
+  "/m/039xj_": {
+   "boxes": 17774,
+   "images": 8336,
+   "clean_images": 7940
+  },
+  "/m/03q69": {
+   "boxes": 234057,
+   "images": 56391,
+   "clean_images": 51563
+  },
+  "/m/04hgtk": {
+   "boxes": 201633,
+   "images": 49308,
+   "clean_images": 41797
+  },
+  "/m/04yx4": {
+   "boxes": 1418594,
+   "images": 378077,
+   "clean_images": 355420
+  },
+  "/m/0dzct": {
+   "boxes": 1037710,
+   "images": 331627,
+   "clean_images": 297682
+  },
+  "/m/0dzf4": {
+   "boxes": 208982,
+   "images": 41380,
+   "clean_images": 37654
+  },
+  "/m/0jyfg": {
+   "boxes": 57946,
+   "images": 41945,
+   "clean_images": 40741
+  },
+  "/m/0k65p": {
+   "boxes": 75307,
+   "images": 22093,
+   "clean_images": 21027
+  },
+  "/m/01rkbr": {
+   "boxes": 10545,
+   "images": 7733,
+   "clean_images": 7613
+  },
+  "/m/01xyhv": {
+   "boxes": 110848,
+   "images": 43922,
+   "clean_images": 43159
+  },
+  "/m/07j7r": {
+   "boxes": 1051344,
+   "images": 289999,
+   "clean_images": 211061
+  },
+  "/m/01yx86": {
+   "boxes": 2748,
+   "images": 2236,
+   "clean_images": 2188
+  },
+  "/m/019jd": {
+   "boxes": 79113,
+   "images": 25478,
+   "clean_images": 24502
+  },
+  "/m/033rq4": {
+   "boxes": 44697,
+   "images": 11226,
+   "clean_images": 11189
+  },
+  "/m/06nrc": {
+   "boxes": 580,
+   "images": 429,
+   "clean_images": 402
+  },
+  "/m/0zvk5": {
+   "boxes": 16502,
+   "images": 7608,
+   "clean_images": 7182
+  },
+  "/m/026t6": {
+   "boxes": 24818,
+   "images": 8104,
+   "clean_images": 7731
+  },
+  "/m/0342h": {
+   "boxes": 25896,
+   "images": 17671,
+   "clean_images": 17164
+  },
+  "/m/09j2d": {
+   "boxes": 1438128,
+   "images": 327818,
+   "clean_images": 304374
+  },
+  "/m/03rszm": {
+   "boxes": 4872,
+   "images": 2616,
+   "clean_images": 2510
+  },
+  "/m/01940j": {
+   "boxes": 1216,
+   "images": 715,
+   "clean_images": 683
+  },
+  "/m/07yv9": {
+   "boxes": 50959,
+   "images": 15736,
+   "clean_images": 14621
+  },
+  "/m/01lrl": {
+   "boxes": 3501,
+   "images": 2229,
+   "clean_images": 1826
+  },
+  "/m/04rky": {
+   "boxes": 156154,
+   "images": 33162,
+   "clean_images": 27737
+  },
+  "/m/09j5n": {
+   "boxes": 744474,
+   "images": 130723,
+   "clean_images": 125854
+  },
+  "/m/01bl7v": {
+   "boxes": 87555,
+   "images": 45938,
+   "clean_images": 44510
+  },
+  "/m/0k0pj": {
+   "boxes": 60142,
+   "images": 28791,
+   "clean_images": 24551
+  },
+  "/m/0h8mhzd": {
+   "boxes": 19396,
+   "images": 6531,
+   "clean_images": 6357
+  },
+  "/m/01cmb2": {
+   "boxes": 954,
+   "images": 746,
+   "clean_images": 693
+  },
+  "/m/0199g": {
+   "boxes": 40161,
+   "images": 17631,
+   "clean_images": 16884
+  },
+  "/m/01bqk0": {
+   "boxes": 59521,
+   "images": 15599,
+   "clean_images": 15174
+  },
+  "/m/01xygc": {
+   "boxes": 6523,
+   "images": 3516,
+   "clean_images": 3442
+  },
+  "/m/02h19r": {
+   "boxes": 2303,
+   "images": 2003,
+   "clean_images": 1941
+  },
+  "/m/02p0tk3": {
+   "boxes": 175244,
+   "images": 45398,
+   "clean_images": 42239
+  },
+  "/m/032b3c": {
+   "boxes": 25957,
+   "images": 12911,
+   "clean_images": 11914
+  },
+  "/m/035r7c": {
+   "boxes": 71479,
+   "images": 17454,
+   "clean_images": 16768
+  },
+  "/m/0fly7": {
+   "boxes": 78473,
+   "images": 31351,
+   "clean_images": 31165
+  },
+  "/m/02wbm": {
+   "boxes": 88422,
+   "images": 25712,
+   "clean_images": 20449
+  },
+  "/m/025dyy": {
+   "boxes": 5364,
+   "images": 2212,
+   "clean_images": 2150
+  },
+  "/m/017ftj": {
+   "boxes": 23996,
+   "images": 15125,
+   "clean_images": 14788
+  },
+  "/m/079cl": {
+   "boxes": 81261,
+   "images": 21029,
+   "clean_images": 20312
+  },
+  "/m/0c9ph5": {
+   "boxes": 345296,
+   "images": 62716,
+   "clean_images": 47702
+  },
+  "/m/0138tl": {
+   "boxes": 70963,
+   "images": 17481,
+   "clean_images": 15472
+  },
+  "/m/01jfsr": {
+   "boxes": 5429,
+   "images": 808,
+   "clean_images": 773
+  },
+  "/m/0bt_c3": {
+   "boxes": 41280,
+   "images": 7894,
+   "clean_images": 6137
+  },
+  "/m/080hkjn": {
+   "boxes": 2495,
+   "images": 1901,
+   "clean_images": 1799
+  },
+  "/m/05s2s": {
+   "boxes": 267913,
+   "images": 72363,
+   "clean_images": 37558
+  },
+  "/m/03jm5": {
+   "boxes": 136152,
+   "images": 58145,
+   "clean_images": 54580
+  },
+  "/m/02fq_6": {
+   "boxes": 3660,
+   "images": 2910,
+   "clean_images": 2674
+  },
+  "/m/07mhn": {
+   "boxes": 8481,
+   "images": 4858,
+   "clean_images": 4726
+  },
+  "/m/0h8l4fh": {
+   "boxes": 1816,
+   "images": 427,
+   "clean_images": 400
+  },
+  "/m/06msq": {
+   "boxes": 34533,
+   "images": 18107,
+   "clean_images": 15188
+  },
+  "/m/0dbzx": {
+   "boxes": 1117,
+   "images": 584,
+   "clean_images": 522
+  },
+  "/m/015qff": {
+   "boxes": 7426,
+   "images": 1774,
+   "clean_images": 1759
+  },
+  "/m/01bjv": {
+   "boxes": 11927,
+   "images": 7293,
+   "clean_images": 6991
+  },
+  "/m/02dgv": {
+   "boxes": 19256,
+   "images": 13382,
+   "clean_images": 13177
+  },
+  "/m/083wq": {
+   "boxes": 340639,
+   "images": 76884,
+   "clean_images": 73588
+  },
+  "/m/0h9mv": {
+   "boxes": 122615,
+   "images": 30815,
+   "clean_images": 29781
+  },
+  "/m/06z37_": {
+   "boxes": 11957,
+   "images": 5536,
+   "clean_images": 5377
+  },
+  "/m/021sj1": {
+   "boxes": 4986,
+   "images": 4942,
+   "clean_images": 3054
+  },
+  "/m/081qc": {
+   "boxes": 15400,
+   "images": 4878,
+   "clean_images": 4725
+  },
+  "/m/09tvcd": {
+   "boxes": 12934,
+   "images": 4894,
+   "clean_images": 4681
+  },
+  "/m/019dx1": {
+   "boxes": 2086,
+   "images": 1051,
+   "clean_images": 1044
+  },
+  "/m/01c648": {
+   "boxes": 9327,
+   "images": 5528,
+   "clean_images": 5515
+  },
+  "/m/01m2v": {
+   "boxes": 4542,
+   "images": 3331,
+   "clean_images": 3254
+  },
+  "/m/01m4t": {
+   "boxes": 263,
+   "images": 210,
+   "clean_images": 203
+  },
+  "/m/01mzpv": {
+   "boxes": 132483,
+   "images": 25504,
+   "clean_images": 24359
+  },
+  "/m/01s105": {
+   "boxes": 9191,
+   "images": 3001,
+   "clean_images": 2867
+  },
+  "/m/01y9k5": {
+   "boxes": 11693,
+   "images": 9472,
+   "clean_images": 9302
+  },
+  "/m/02522": {
+   "boxes": 6112,
+   "images": 3339,
+   "clean_images": 3281
+  },
+  "/m/02rdsp": {
+   "boxes": 6198,
+   "images": 1280,
+   "clean_images": 1218
+  },
+  "/m/05kyg_": {
+   "boxes": 1526,
+   "images": 1151,
+   "clean_images": 1125
+  },
+  "/m/0642b4": {
+   "boxes": 1353,
+   "images": 872,
+   "clean_images": 804
+  },
+  "/m/0fqfqc": {
+   "boxes": 4414,
+   "images": 1623,
+   "clean_images": 1145
+  },
+  "/m/0gjbg72": {
+   "boxes": 22899,
+   "images": 6011,
+   "clean_images": 5331
+  },
+  "/m/02p5f1q": {
+   "boxes": 5327,
+   "images": 3793,
+   "clean_images": 3576
+  },
+  "/m/078n6m": {
+   "boxes": 5314,
+   "images": 2840,
+   "clean_images": 2810
+  },
+  "/m/0b3fp9": {
+   "boxes": 3113,
+   "images": 2212,
+   "clean_images": 2204
+  },
+  "/m/0fx9l": {
+   "boxes": 485,
+   "images": 432,
+   "clean_images": 428
+  },
+  "/m/018xm": {
+   "boxes": 6845,
+   "images": 3480,
+   "clean_images": 3106
+  },
+  "/m/01226z": {
+   "boxes": 5097,
+   "images": 4339,
+   "clean_images": 4172
+  },
+  "/m/0c_jw": {
+   "boxes": 38527,
+   "images": 14702,
+   "clean_images": 13081
+  },
+  "/m/01fdzj": {
+   "boxes": 67945,
+   "images": 21806,
+   "clean_images": 21473
+  },
+  "/m/01gkx_": {
+   "boxes": 10079,
+   "images": 3365,
+   "clean_images": 3295
+  },
+  "/m/01bfm9": {
+   "boxes": 16981,
+   "images": 6833,
+   "clean_images": 6763
+  },
+  "/m/07r04": {
+   "boxes": 12135,
+   "images": 8078,
+   "clean_images": 7752
+  },
+  "/m/0h2r6": {
+   "boxes": 7720,
+   "images": 5378,
+   "clean_images": 5189
+  },
+  "/m/04brg2": {
+   "boxes": 41086,
+   "images": 6084,
+   "clean_images": 5807
+  },
+  "/m/04m6gz": {
+   "boxes": 3854,
+   "images": 2774,
+   "clean_images": 2751
+  },
+  "/m/01n5jq": {
+   "boxes": 23566,
+   "images": 16152,
+   "clean_images": 15842
+  },
+  "/m/0220r2": {
+   "boxes": 3691,
+   "images": 3089,
+   "clean_images": 2863
+  },
+  "/m/031n1": {
+   "boxes": 2237,
+   "images": 979,
+   "clean_images": 962
+  },
+  "/m/03__z0": {
+   "boxes": 5307,
+   "images": 3388,
+   "clean_images": 3203
+  },
+  "/m/01rzcn": {
+   "boxes": 5202,
+   "images": 2481,
+   "clean_images": 2478
+  },
+  "/m/029tx": {
+   "boxes": 1721,
+   "images": 1101,
+   "clean_images": 295
+  },
+  "/m/07c52": {
+   "boxes": 3789,
+   "images": 2789,
+   "clean_images": 2744
+  },
+  "/m/0gv1x": {
+   "boxes": 2388,
+   "images": 1414,
+   "clean_images": 1221
+  },
+  "/m/07jdr": {
+   "boxes": 13050,
+   "images": 10081,
+   "clean_images": 9221
+  },
+  "/m/0dv5r": {
+   "boxes": 6404,
+   "images": 5037,
+   "clean_images": 4740
+  },
+  "/m/06c54": {
+   "boxes": 2540,
+   "images": 1752,
+   "clean_images": 1689
+  },
+  "/m/01jfm_": {
+   "boxes": 7852,
+   "images": 5368,
+   "clean_images": 5364
+  },
+  "/m/01d40f": {
+   "boxes": 52999,
+   "images": 31527,
+   "clean_images": 28617
+  },
+  "/m/05r655": {
+   "boxes": 197155,
+   "images": 93731,
+   "clean_images": 87817
+  },
+  "/m/01nkt": {
+   "boxes": 1560,
+   "images": 503,
+   "clean_images": 374
+  },
+  "/m/0kpqd": {
+   "boxes": 844,
+   "images": 409,
+   "clean_images": 259
+  },
+  "/m/0cmf2": {
+   "boxes": 21285,
+   "images": 12003,
+   "clean_images": 11182
+  },
+  "/m/07y_7": {
+   "boxes": 2828,
+   "images": 1307,
+   "clean_images": 1231
+  },
+  "/m/0463sg": {
+   "boxes": 91024,
+   "images": 23059,
+   "clean_images": 22296
+  },
+  "/m/0hg7b": {
+   "boxes": 27272,
+   "images": 20393,
+   "clean_images": 20282
+  },
+  "/m/02jvh9": {
+   "boxes": 2272,
+   "images": 1598,
+   "clean_images": 1509
+  },
+  "/m/03v5tg": {
+   "boxes": 292,
+   "images": 183,
+   "clean_images": 146
+  },
+  "/m/01599": {
+   "boxes": 9565,
+   "images": 4661,
+   "clean_images": 4498
+  },
+  "/m/024g6": {
+   "boxes": 4458,
+   "images": 2589,
+   "clean_images": 2538
+  },
+  "/m/050k8": {
+   "boxes": 6365,
+   "images": 4312,
+   "clean_images": 3965
+  },
+  "/m/0b_rs": {
+   "boxes": 3881,
+   "images": 3618,
+   "clean_images": 3599
+  },
+  "/m/0bt9lr": {
+   "boxes": 28675,
+   "images": 20607,
+   "clean_images": 18954
+  },
+  "/m/0d5gx": {
+   "boxes": 4310,
+   "images": 3738,
+   "clean_images": 2743
+  },
+  "/m/0ch_cf": {
+   "boxes": 23195,
+   "images": 5434,
+   "clean_images": 4461
+  },
+  "/m/0gd2v": {
+   "boxes": 1746,
+   "images": 974,
+   "clean_images": 851
+  },
+  "/m/01yrx": {
+   "boxes": 15183,
+   "images": 12516,
+   "clean_images": 11588
+  },
+  "/m/01gmv2": {
+   "boxes": 1694,
+   "images": 1200,
+   "clean_images": 1193
+  },
+  "/m/01prls": {
+   "boxes": 81108,
+   "images": 29521,
+   "clean_images": 27351
+  },
+  "/m/04szw": {
+   "boxes": 16503,
+   "images": 5253,
+   "clean_images": 5057
+  },
+  "/m/01xq0k1": {
+   "boxes": 11603,
+   "images": 2916,
+   "clean_images": 2396
+  },
+  "/m/03fwl": {
+   "boxes": 2075,
+   "images": 1112,
+   "clean_images": 1042
+  },
+  "/m/07bgp": {
+   "boxes": 3438,
+   "images": 1188,
+   "clean_images": 942
+  },
+  "/m/03m3vtv": {
+   "boxes": 255,
+   "images": 109,
+   "clean_images": 94
+  },
+  "/m/014trl": {
+   "boxes": 2394,
+   "images": 848,
+   "clean_images": 791
+  },
+  "/m/03120": {
+   "boxes": 29246,
+   "images": 8402,
+   "clean_images": 7931
+  },
+  "/m/02dl1y": {
+   "boxes": 13245,
+   "images": 8460,
+   "clean_images": 7937
+  },
+  "/m/05441v": {
+   "boxes": 150,
+   "images": 80,
+   "clean_images": 79
+  },
+  "/m/071qp": {
+   "boxes": 1940,
+   "images": 1810,
+   "clean_images": 1761
+  },
+  "/m/0h23m": {
+   "boxes": 1651,
+   "images": 1157,
+   "clean_images": 1066
+  },
+  "/m/02wv84t": {
+   "boxes": 526,
+   "images": 473,
+   "clean_images": 456
+  },
+  "/m/0h99cwc": {
+   "boxes": 4662,
+   "images": 1157,
+   "clean_images": 1154
+  },
+  "/m/02lbcq": {
+   "boxes": 174,
+   "images": 122,
+   "clean_images": 116
+  },
+  "/m/0dv77": {
+   "boxes": 375,
+   "images": 122,
+   "clean_images": 104
+  },
+  "/m/02pdsw": {
+   "boxes": 213,
+   "images": 196,
+   "clean_images": 196
+  },
+  "/m/02xwb": {
+   "boxes": 26236,
+   "images": 5283,
+   "clean_images": 4400
+  },
+  "/m/05vtc": {
+   "boxes": 599,
+   "images": 304,
+   "clean_images": 223
+  },
+  "/m/0fj52s": {
+   "boxes": 1456,
+   "images": 594,
+   "clean_images": 544
+  },
+  "/m/057p5t": {
+   "boxes": 517,
+   "images": 466,
+   "clean_images": 464
+  },
+  "/m/01knjb": {
+   "boxes": 9823,
+   "images": 3399,
+   "clean_images": 3394
+  },
+  "/m/02crq1": {
+   "boxes": 4259,
+   "images": 3321,
+   "clean_images": 3303
+  },
+  "/m/03k3r": {
+   "boxes": 13368,
+   "images": 7073,
+   "clean_images": 5364
+  },
+  "/m/0pcr": {
+   "boxes": 829,
+   "images": 452,
+   "clean_images": 434
+  },
+  "/m/06_72j": {
+   "boxes": 199,
+   "images": 169,
+   "clean_images": 157
+  },
+  "/m/01b7fy": {
+   "boxes": 1255,
+   "images": 1064,
+   "clean_images": 1058
+  },
+  "/m/09ct_": {
+   "boxes": 3023,
+   "images": 2398,
+   "clean_images": 2238
+  },
+  "/m/0bjyj5": {
+   "boxes": 1807,
+   "images": 1020,
+   "clean_images": 1014
+  },
+  "/m/01ww8y": {
+   "boxes": 37374,
+   "images": 10313,
+   "clean_images": 8788
+  },
+  "/m/0270h": {
+   "boxes": 27407,
+   "images": 8466,
+   "clean_images": 7857
+  },
+  "/m/052lwg6": {
+   "boxes": 23010,
+   "images": 10289,
+   "clean_images": 8907
+  },
+  "/m/015h_t": {
+   "boxes": 3157,
+   "images": 2771,
+   "clean_images": 2716
+  },
+  "/m/0fqt361": {
+   "boxes": 1254,
+   "images": 576,
+   "clean_images": 524
+  },
+  "/m/05z6w": {
+   "boxes": 4197,
+   "images": 894,
+   "clean_images": 779
+  },
+  "/m/03xxp": {
+   "boxes": 1568,
+   "images": 778,
+   "clean_images": 660
+  },
+  "/m/09ld4": {
+   "boxes": 1608,
+   "images": 1370,
+   "clean_images": 1150
+  },
+  "/m/02jfl0": {
+   "boxes": 651,
+   "images": 505,
+   "clean_images": 488
+  },
+  "/m/0167gd": {
+   "boxes": 6442,
+   "images": 3383,
+   "clean_images": 3355
+  },
+  "/m/03g8mr": {
+   "boxes": 1228,
+   "images": 1098,
+   "clean_images": 1081
+  },
+  "/m/04dr76w": {
+   "boxes": 40188,
+   "images": 11456,
+   "clean_images": 10981
+  },
+  "/m/050gv4": {
+   "boxes": 5416,
+   "images": 2023,
+   "clean_images": 1932
+  },
+  "/m/0h8n27j": {
+   "boxes": 118,
+   "images": 106,
+   "clean_images": 102
+  },
+  "/m/0cmx8": {
+   "boxes": 1709,
+   "images": 1044,
+   "clean_images": 1009
+  },
+  "/m/07k1x": {
+   "boxes": 2075,
+   "images": 793,
+   "clean_images": 730
+  },
+  "/m/0268lbt": {
+   "boxes": 10505,
+   "images": 2571,
+   "clean_images": 2560
+  },
+  "/m/015p6": {
+   "boxes": 47921,
+   "images": 18525,
+   "clean_images": 16712
+  },
+  "/m/040b_t": {
+   "boxes": 592,
+   "images": 549,
+   "clean_images": 546
+  },
+  "/m/0cxn2": {
+   "boxes": 2834,
+   "images": 1454,
+   "clean_images": 1399
+  },
+  "/m/054_l": {
+   "boxes": 1572,
+   "images": 1146,
+   "clean_images": 1133
+  },
+  "/m/04_sv": {
+   "boxes": 13382,
+   "images": 6944,
+   "clean_images": 6829
+  },
+  "/m/01j61q": {
+   "boxes": 6907,
+   "images": 3508,
+   "clean_images": 3137
+  },
+  "/m/0f6wt": {
+   "boxes": 1717,
+   "images": 1489,
+   "clean_images": 1368
+  },
+  "/m/0jbk": {
+   "boxes": 17442,
+   "images": 9396,
+   "clean_images": 6161
+  },
+  "/m/03hj559": {
+   "boxes": 1005,
+   "images": 597,
+   "clean_images": 560
+  },
+  "/m/03hlz0c": {
+   "boxes": 549,
+   "images": 254,
+   "clean_images": 239
+  },
+  "/m/04kkgm": {
+   "boxes": 4507,
+   "images": 1464,
+   "clean_images": 1444
+  },
+  "/m/01_bhs": {
+   "boxes": 24991,
+   "images": 7353,
+   "clean_images": 6700
+  },
+  "/m/09ddx": {
+   "boxes": 15451,
+   "images": 4669,
+   "clean_images": 4221
+  },
+  "/m/0dbvp": {
+   "boxes": 8436,
+   "images": 2746,
+   "clean_images": 2557
+  },
+  "/m/020kz": {
+   "boxes": 1087,
+   "images": 779,
+   "clean_images": 697
+  },
+  "/m/03vt0": {
+   "boxes": 8981,
+   "images": 6080,
+   "clean_images": 5643
+  },
+  "/m/0cyhj_": {
+   "boxes": 6195,
+   "images": 900,
+   "clean_images": 823
+  },
+  "/m/0f4s2w": {
+   "boxes": 18621,
+   "images": 5254,
+   "clean_images": 3004
+  },
+  "/m/0hqkz": {
+   "boxes": 1283,
+   "images": 432,
+   "clean_images": 388
+  },
+  "/m/019w40": {
+   "boxes": 2594,
+   "images": 1691,
+   "clean_images": 1664
+  },
+  "/m/02d9qx": {
+   "boxes": 1003,
+   "images": 899,
+   "clean_images": 893
+  },
+  "/m/01nq26": {
+   "boxes": 1425,
+   "images": 682,
+   "clean_images": 627
+  },
+  "/m/03nfch": {
+   "boxes": 2938,
+   "images": 1298,
+   "clean_images": 1236
+  },
+  "/m/03grzl": {
+   "boxes": 2529,
+   "images": 1671,
+   "clean_images": 1662
+  },
+  "/m/0ft9s": {
+   "boxes": 1490,
+   "images": 1360,
+   "clean_images": 1235
+  },
+  "/m/01b638": {
+   "boxes": 3132,
+   "images": 1426,
+   "clean_images": 1369
+  },
+  "/m/0cvnqh": {
+   "boxes": 7229,
+   "images": 3630,
+   "clean_images": 3569
+  },
+  "/m/03q5c7": {
+   "boxes": 2819,
+   "images": 1582,
+   "clean_images": 1509
+  },
+  "/m/0dt3t": {
+   "boxes": 1687,
+   "images": 1034,
+   "clean_images": 1008
+  },
+  "/m/02wbtzl": {
+   "boxes": 6979,
+   "images": 4296,
+   "clean_images": 4222
+  },
+  "/m/02wv6h6": {
+   "boxes": 1259,
+   "images": 974,
+   "clean_images": 851
+  },
+  "/m/01j51": {
+   "boxes": 13505,
+   "images": 3262,
+   "clean_images": 2189
+  },
+  "/m/03p3bw": {
+   "boxes": 15952,
+   "images": 5006,
+   "clean_images": 4996
+  },
+  "/m/0f9_l": {
+   "boxes": 943,
+   "images": 615,
+   "clean_images": 561
+  },
+  "/m/05y5lj": {
+   "boxes": 44900,
+   "images": 10056,
+   "clean_images": 9698
+  },
+  "/m/0hnnb": {
+   "boxes": 7204,
+   "images": 3357,
+   "clean_images": 2956
+  },
+  "/m/06k2mb": {
+   "boxes": 3124,
+   "images": 1532,
+   "clean_images": 1445
+  },
+  "/m/025nd": {
+   "boxes": 4243,
+   "images": 3074,
+   "clean_images": 2943
+  },
+  "/m/014y4n": {
+   "boxes": 6951,
+   "images": 2244,
+   "clean_images": 2219
+  },
+  "/m/0ph39": {
+   "boxes": 4543,
+   "images": 2076,
+   "clean_images": 2034
+  },
+  "/m/021mn": {
+   "boxes": 4158,
+   "images": 998,
+   "clean_images": 551
+  },
+  "/m/0271t": {
+   "boxes": 40323,
+   "images": 16071,
+   "clean_images": 15707
+  },
+  "/m/02vqfm": {
+   "boxes": 2384,
+   "images": 1858,
+   "clean_images": 1794
+  },
+  "/m/0ky7b": {
+   "boxes": 92,
+   "images": 88,
+   "clean_images": 66
+  },
+  "/m/0gxl3": {
+   "boxes": 727,
+   "images": 561,
+   "clean_images": 449
+  },
+  "/m/07clx": {
+   "boxes": 1342,
+   "images": 1068,
+   "clean_images": 1035
+  },
+  "/m/07fbm7": {
+   "boxes": 7944,
+   "images": 1257,
+   "clean_images": 1163
+  },
+  "/m/09728": {
+   "boxes": 3846,
+   "images": 1717,
+   "clean_images": 1600
+  },
+  "/m/0h8n5zk": {
+   "boxes": 2127,
+   "images": 1966,
+   "clean_images": 1963
+  },
+  "/m/02_n6y": {
+   "boxes": 9636,
+   "images": 7128,
+   "clean_images": 6934
+  },
+  "/m/07030": {
+   "boxes": 2088,
+   "images": 681,
+   "clean_images": 653
+  },
+  "/m/02jnhm": {
+   "boxes": 2988,
+   "images": 1307,
+   "clean_images": 1129
+  },
+  "/m/01llwg": {
+   "boxes": 2735,
+   "images": 2200,
+   "clean_images": 2185
+  },
+  "/m/01r546": {
+   "boxes": 1446,
+   "images": 669,
+   "clean_images": 621
+  },
+  "/m/09kmb": {
+   "boxes": 2033,
+   "images": 1702,
+   "clean_images": 1561
+  },
+  "/m/01lynh": {
+   "boxes": 5981,
+   "images": 4533,
+   "clean_images": 2475
+  },
+  "/m/01mqdt": {
+   "boxes": 6112,
+   "images": 2817,
+   "clean_images": 2778
+  },
+  "/m/06c7f7": {
+   "boxes": 1343,
+   "images": 1086,
+   "clean_images": 942
+  },
+  "/m/0_k2": {
+   "boxes": 925,
+   "images": 381,
+   "clean_images": 340
+  },
+  "/m/01h3n": {
+   "boxes": 11401,
+   "images": 2856,
+   "clean_images": 2790
+  },
+  "/m/09dzg": {
+   "boxes": 205,
+   "images": 130,
+   "clean_images": 109
+  },
+  "/m/03ssj5": {
+   "boxes": 3563,
+   "images": 2933,
+   "clean_images": 2828
+  },
+  "/m/025rp__": {
+   "boxes": 3068,
+   "images": 1977,
+   "clean_images": 1897
+  },
+  "/m/0dtln": {
+   "boxes": 3663,
+   "images": 1565,
+   "clean_images": 1536
+  },
+  "/m/09f_2": {
+   "boxes": 1069,
+   "images": 719,
+   "clean_images": 630
+  },
+  "/m/0cyfs": {
+   "boxes": 2672,
+   "images": 1047,
+   "clean_images": 1030
+  },
+  "/m/03hl4l9": {
+   "boxes": 9112,
+   "images": 1738,
+   "clean_images": 1465
+  },
+  "/m/013y1f": {
+   "boxes": 398,
+   "images": 377,
+   "clean_images": 368
+  },
+  "/m/0cnyhnx": {
+   "boxes": 1736,
+   "images": 1074,
+   "clean_images": 848
+  },
+  "/m/01z1kdw": {
+   "boxes": 2838,
+   "images": 1746,
+   "clean_images": 1711
+  },
+  "/m/01x3z": {
+   "boxes": 1222,
+   "images": 916,
+   "clean_images": 862
+  },
+  "/m/01btn": {
+   "boxes": 983,
+   "images": 419,
+   "clean_images": 393
+  },
+  "/m/04ctx": {
+   "boxes": 850,
+   "images": 610,
+   "clean_images": 588
+  },
+  "/m/0qmmr": {
+   "boxes": 1464,
+   "images": 882,
+   "clean_images": 865
+  },
+  "/m/073bxn": {
+   "boxes": 1446,
+   "images": 1196,
+   "clean_images": 1169
+  },
+  "/m/05gqfk": {
+   "boxes": 986,
+   "images": 517,
+   "clean_images": 396
+  },
+  "/m/03fp41": {
+   "boxes": 22834,
+   "images": 8932,
+   "clean_images": 8429
+  },
+  "/m/0fm3zh": {
+   "boxes": 22760,
+   "images": 7352,
+   "clean_images": 6849
+  },
+  "/m/02jz0l": {
+   "boxes": 1695,
+   "images": 1170,
+   "clean_images": 1159
+  },
+  "/m/03dnzn": {
+   "boxes": 545,
+   "images": 533,
+   "clean_images": 511
+  },
+  "/m/0174n1": {
+   "boxes": 1198,
+   "images": 733,
+   "clean_images": 697
+  },
+  "/m/0cyf8": {
+   "boxes": 10127,
+   "images": 4937,
+   "clean_images": 4380
+  },
+  "/m/04m9y": {
+   "boxes": 2120,
+   "images": 1838,
+   "clean_images": 1766
+  },
+  "/m/0jqgx": {
+   "boxes": 2252,
+   "images": 1198,
+   "clean_images": 869
+  },
+  "/m/07j87": {
+   "boxes": 6254,
+   "images": 1283,
+   "clean_images": 1175
+  },
+  "/m/0130jx": {
+   "boxes": 1648,
+   "images": 1442,
+   "clean_images": 1425
+  },
+  "/m/0h8nr_l": {
+   "boxes": 2678,
+   "images": 763,
+   "clean_images": 732
+  },
+  "/m/0h8my_4": {
+   "boxes": 985,
+   "images": 807,
+   "clean_images": 797
+  },
+  "/m/01xgg_": {
+   "boxes": 2060,
+   "images": 645,
+   "clean_images": 626
+  },
+  "/m/0dkzw": {
+   "boxes": 461,
+   "images": 318,
+   "clean_images": 318
+  },
+  "/m/05r5c": {
+   "boxes": 1374,
+   "images": 1246,
+   "clean_images": 1136
+  },
+  "/m/07qxg_": {
+   "boxes": 11705,
+   "images": 2087,
+   "clean_images": 2054
+  },
+  "/m/04y4h8h": {
+   "boxes": 358,
+   "images": 324,
+   "clean_images": 324
+  },
+  "/m/0cffdh": {
+   "boxes": 4923,
+   "images": 2285,
+   "clean_images": 1916
+  },
+  "/m/0d8zb": {
+   "boxes": 2064,
+   "images": 729,
+   "clean_images": 699
+  },
+  "/m/06m11": {
+   "boxes": 12053,
+   "images": 5407,
+   "clean_images": 3369
+  },
+  "/m/02zn6n": {
+   "boxes": 2086,
+   "images": 662,
+   "clean_images": 439
+  },
+  "/m/099ssp": {
+   "boxes": 3462,
+   "images": 1358,
+   "clean_images": 1299
+  },
+  "/m/0bwd_0j": {
+   "boxes": 3272,
+   "images": 1732,
+   "clean_images": 1228
+  },
+  "/m/083kb": {
+   "boxes": 2960,
+   "images": 1646,
+   "clean_images": 1423
+  },
+  "/m/0h8n6f9": {
+   "boxes": 266,
+   "images": 237,
+   "clean_images": 230
+  },
+  "/m/0449p": {
+   "boxes": 586,
+   "images": 509,
+   "clean_images": 453
+  },
+  "/m/0c29q": {
+   "boxes": 811,
+   "images": 694,
+   "clean_images": 663
+  },
+  "/m/0cd4d": {
+   "boxes": 715,
+   "images": 568,
+   "clean_images": 531
+  },
+  "/m/027rl48": {
+   "boxes": 54,
+   "images": 20,
+   "clean_images": 20
+  },
+  "/m/03m3pdh": {
+   "boxes": 1501,
+   "images": 1132,
+   "clean_images": 996
+  },
+  "/m/05zsy": {
+   "boxes": 6150,
+   "images": 1705,
+   "clean_images": 1372
+  },
+  "/m/09kx5": {
+   "boxes": 3867,
+   "images": 2093,
+   "clean_images": 1744
+  },
+  "/m/06nwz": {
+   "boxes": 3063,
+   "images": 1824,
+   "clean_images": 684
+  },
+  "/m/02hj4": {
+   "boxes": 1532,
+   "images": 886,
+   "clean_images": 742
+  },
+  "/m/04h7h": {
+   "boxes": 1518,
+   "images": 1464,
+   "clean_images": 1460
+  },
+  "/m/02w3_ws": {
+   "boxes": 409,
+   "images": 128,
+   "clean_images": 119
+  },
+  "/m/020jm": {
+   "boxes": 3523,
+   "images": 1878,
+   "clean_images": 1838
+  },
+  "/m/07pj7bq": {
+   "boxes": 3846,
+   "images": 630,
+   "clean_images": 562
+  },
+  "/m/06__v": {
+   "boxes": 944,
+   "images": 574,
+   "clean_images": 565
+  },
+  "/m/071p9": {
+   "boxes": 3505,
+   "images": 1361,
+   "clean_images": 1267
+  },
+  "/m/068zj": {
+   "boxes": 1613,
+   "images": 811,
+   "clean_images": 574
+  },
+  "/m/034c16": {
+   "boxes": 3508,
+   "images": 1249,
+   "clean_images": 1239
+  },
+  "/m/01krhy": {
+   "boxes": 411,
+   "images": 367,
+   "clean_images": 332
+  },
+  "/m/0nl46": {
+   "boxes": 687,
+   "images": 554,
+   "clean_images": 427
+  },
+  "/m/01bms0": {
+   "boxes": 85,
+   "images": 46,
+   "clean_images": 42
+  },
+  "/m/0nybt": {
+   "boxes": 314,
+   "images": 230,
+   "clean_images": 170
+  },
+  "/m/052sf": {
+   "boxes": 4497,
+   "images": 1782,
+   "clean_images": 1413
+  },
+  "/m/031b6r": {
+   "boxes": 570,
+   "images": 397,
+   "clean_images": 377
+  },
+  "/m/011k07": {
+   "boxes": 1998,
+   "images": 1324,
+   "clean_images": 1131
+  },
+  "/m/0gj37": {
+   "boxes": 734,
+   "images": 565,
+   "clean_images": 532
+  },
+  "/m/01h44": {
+   "boxes": 655,
+   "images": 389,
+   "clean_images": 252
+  },
+  "/m/03tw93": {
+   "boxes": 711,
+   "images": 685,
+   "clean_images": 678
+  },
+  "/m/0703r8": {
+   "boxes": 631,
+   "images": 511,
+   "clean_images": 508
+  },
+  "/m/0388q": {
+   "boxes": 2787,
+   "images": 767,
+   "clean_images": 155
+  },
+  "/m/0gjkl": {
+   "boxes": 1903,
+   "images": 1434,
+   "clean_images": 1380
+  },
+  "/m/016m2d": {
+   "boxes": 2661,
+   "images": 1501,
+   "clean_images": 1216
+  },
+  "/m/01vbnl": {
+   "boxes": 440,
+   "images": 376,
+   "clean_images": 373
+  },
+  "/m/09g1w": {
+   "boxes": 1099,
+   "images": 862,
+   "clean_images": 849
+  },
+  "/m/09csl": {
+   "boxes": 1704,
+   "images": 1484,
+   "clean_images": 1250
+  },
+  "/m/0cdl1": {
+   "boxes": 42026,
+   "images": 10378,
+   "clean_images": 9741
+  },
+  "/m/07cmd": {
+   "boxes": 1716,
+   "images": 1062,
+   "clean_images": 866
+  },
+  "/m/0fbdv": {
+   "boxes": 1287,
+   "images": 397,
+   "clean_images": 318
+  },
+  "/m/09b5t": {
+   "boxes": 3059,
+   "images": 1421,
+   "clean_images": 1246
+  },
+  "/m/03bk1": {
+   "boxes": 1431,
+   "images": 920,
+   "clean_images": 822
+  },
+  "/m/07gql": {
+   "boxes": 1546,
+   "images": 835,
+   "clean_images": 803
+  },
+  "/m/05ctyq": {
+   "boxes": 502,
+   "images": 385,
+   "clean_images": 367
+  },
+  "/m/0gm28": {
+   "boxes": 2261,
+   "images": 648,
+   "clean_images": 630
+  },
+  "/m/0crjs": {
+   "boxes": 1817,
+   "images": 1809,
+   "clean_images": 1771
+  },
+  "/m/0120dh": {
+   "boxes": 1132,
+   "images": 745,
+   "clean_images": 634
+  },
+  "/m/0grw1": {
+   "boxes": 3088,
+   "images": 2654,
+   "clean_images": 2624
+  },
+  "/m/0kmg4": {
+   "boxes": 1587,
+   "images": 1020,
+   "clean_images": 910
+  },
+  "/m/06_fw": {
+   "boxes": 1810,
+   "images": 1103,
+   "clean_images": 1076
+  },
+  "/m/0d4w1": {
+   "boxes": 661,
+   "images": 381,
+   "clean_images": 363
+  },
+  "/m/0lt4_": {
+   "boxes": 123,
+   "images": 109,
+   "clean_images": 100
+  },
+  "/m/026qbn5": {
+   "boxes": 1889,
+   "images": 1133,
+   "clean_images": 1126
+  },
+  "/m/0663v": {
+   "boxes": 2008,
+   "images": 1251,
+   "clean_images": 1200
+  },
+  "/m/0cdn1": {
+   "boxes": 1486,
+   "images": 1068,
+   "clean_images": 948
+  },
+  "/m/0242l": {
+   "boxes": 3042,
+   "images": 1224,
+   "clean_images": 932
+  },
+  "/m/0l3ms": {
+   "boxes": 326,
+   "images": 261,
+   "clean_images": 261
+  },
+  "/m/02068x": {
+   "boxes": 1868,
+   "images": 569,
+   "clean_images": 538
+  },
+  "/m/014j1m": {
+   "boxes": 3898,
+   "images": 1078,
+   "clean_images": 936
+  },
+  "/m/029bxz": {
+   "boxes": 637,
+   "images": 509,
+   "clean_images": 502
+  },
+  "/m/02z51p": {
+   "boxes": 1125,
+   "images": 773,
+   "clean_images": 772
+  },
+  "/m/0hf58v5": {
+   "boxes": 2220,
+   "images": 953,
+   "clean_images": 938
+  },
+  "/m/0dftk": {
+   "boxes": 4523,
+   "images": 1365,
+   "clean_images": 1248
+  },
+  "/m/0hkxq": {
+   "boxes": 1128,
+   "images": 475,
+   "clean_images": 282
+  },
+  "/m/0175cv": {
+   "boxes": 143,
+   "images": 107,
+   "clean_images": 79
+  },
+  "/m/078jl": {
+   "boxes": 1378,
+   "images": 1188,
+   "clean_images": 1032
+  },
+  "/m/04169hn": {
+   "boxes": 300,
+   "images": 287,
+   "clean_images": 278
+  },
+  "/m/015x4r": {
+   "boxes": 1194,
+   "images": 454,
+   "clean_images": 424
+  },
+  "/m/027pcv": {
+   "boxes": 1098,
+   "images": 287,
+   "clean_images": 236
+  },
+  "/m/044r5d": {
+   "boxes": 434,
+   "images": 321,
+   "clean_images": 320
+  },
+  "/m/01tcjp": {
+   "boxes": 4608,
+   "images": 1364,
+   "clean_images": 959
+  },
+  "/m/0c06p": {
+   "boxes": 5886,
+   "images": 1220,
+   "clean_images": 1092
+  },
+  "/m/0k1tl": {
+   "boxes": 1705,
+   "images": 1011,
+   "clean_images": 951
+  },
+  "/m/0l515": {
+   "boxes": 1157,
+   "images": 795,
+   "clean_images": 717
+  },
+  "/m/020lf": {
+   "boxes": 733,
+   "images": 622,
+   "clean_images": 588
+  },
+  "/m/0bh9flk": {
+   "boxes": 975,
+   "images": 784,
+   "clean_images": 749
+  },
+  "/m/05676x": {
+   "boxes": 132,
+   "images": 95,
+   "clean_images": 93
+  },
+  "/m/08pbxl": {
+   "boxes": 3026,
+   "images": 2143,
+   "clean_images": 1971
+  },
+  "/m/074d1": {
+   "boxes": 81,
+   "images": 75,
+   "clean_images": 68
+  },
+  "/m/01pns0": {
+   "boxes": 432,
+   "images": 408,
+   "clean_images": 405
+  },
+  "/m/04ylt": {
+   "boxes": 603,
+   "images": 432,
+   "clean_images": 411
+  },
+  "/m/0584n8": {
+   "boxes": 162,
+   "images": 111,
+   "clean_images": 111
+  },
+  "/m/018p4k": {
+   "boxes": 2755,
+   "images": 1981,
+   "clean_images": 1635
+  },
+  "/m/02s195": {
+   "boxes": 2468,
+   "images": 1561,
+   "clean_images": 1442
+  },
+  "/m/02x984l": {
+   "boxes": 681,
+   "images": 589,
+   "clean_images": 580
+  },
+  "/m/03ldnb": {
+   "boxes": 478,
+   "images": 431,
+   "clean_images": 429
+  },
+  "/m/0152hh": {
+   "boxes": 770,
+   "images": 538,
+   "clean_images": 495
+  },
+  "/m/047j0r": {
+   "boxes": 374,
+   "images": 275,
+   "clean_images": 266
+  },
+  "/m/0306r": {
+   "boxes": 565,
+   "images": 484,
+   "clean_images": 422
+  },
+  "/m/01s55n": {
+   "boxes": 630,
+   "images": 408,
+   "clean_images": 374
+  },
+  "/m/0h8nm9j": {
+   "boxes": 208,
+   "images": 184,
+   "clean_images": 184
+  },
+  "/m/01lcw4": {
+   "boxes": 366,
+   "images": 334,
+   "clean_images": 327
+  },
+  "/m/06mf6": {
+   "boxes": 1641,
+   "images": 1179,
+   "clean_images": 800
+  },
+  "/m/0k5j": {
+   "boxes": 1898,
+   "images": 1143,
+   "clean_images": 1023
+  },
+  "/m/02y6n": {
+   "boxes": 2114,
+   "images": 1121,
+   "clean_images": 119
+  },
+  "/m/02rgn06": {
+   "boxes": 661,
+   "images": 579,
+   "clean_images": 573
+  },
+  "/m/09k_b": {
+   "boxes": 1756,
+   "images": 679,
+   "clean_images": 574
+  },
+  "/m/012w5l": {
+   "boxes": 994,
+   "images": 754,
+   "clean_images": 730
+  },
+  "/m/01j3zr": {
+   "boxes": 262,
+   "images": 167,
+   "clean_images": 163
+  },
+  "/m/065h6l": {
+   "boxes": 103,
+   "images": 102,
+   "clean_images": 97
+  },
+  "/m/01gllr": {
+   "boxes": 511,
+   "images": 430,
+   "clean_images": 427
+  },
+  "/m/0fz0h": {
+   "boxes": 383,
+   "images": 350,
+   "clean_images": 340
+  },
+  "/m/05z55": {
+   "boxes": 769,
+   "images": 734,
+   "clean_images": 731
+  },
+  "/m/0ftb8": {
+   "boxes": 6815,
+   "images": 1570,
+   "clean_images": 1474
+  },
+  "/m/03qrc": {
+   "boxes": 546,
+   "images": 454,
+   "clean_images": 434
+  },
+  "/m/04rmv": {
+   "boxes": 857,
+   "images": 698,
+   "clean_images": 648
+  },
+  "/m/0d_2m": {
+   "boxes": 1857,
+   "images": 1697,
+   "clean_images": 1592
+  },
+  "/m/0djtd": {
+   "boxes": 874,
+   "images": 382,
+   "clean_images": 128
+  },
+  "/m/01dy8n": {
+   "boxes": 515,
+   "images": 425,
+   "clean_images": 383
+  },
+  "/m/02wmf": {
+   "boxes": 249,
+   "images": 207,
+   "clean_images": 207
+  },
+  "/m/0h8n6ft": {
+   "boxes": 337,
+   "images": 248,
+   "clean_images": 241
+  },
+  "/m/02f9f_": {
+   "boxes": 235,
+   "images": 206,
+   "clean_images": 202
+  },
+  "/m/0h8lkj8": {
+   "boxes": 433,
+   "images": 352,
+   "clean_images": 341
+  },
+  "/m/0hdln": {
+   "boxes": 253,
+   "images": 235,
+   "clean_images": 229
+  },
+  "/m/09d5_": {
+   "boxes": 1663,
+   "images": 1362,
+   "clean_images": 979
+  },
+  "/m/06y5r": {
+   "boxes": 567,
+   "images": 391,
+   "clean_images": 330
+  },
+  "/m/0174k2": {
+   "boxes": 655,
+   "images": 326,
+   "clean_images": 302
+  },
+  "/m/07kng9": {
+   "boxes": 425,
+   "images": 284,
+   "clean_images": 272
+  },
+  "/m/04c0y": {
+   "boxes": 778,
+   "images": 458,
+   "clean_images": 409
+  },
+  "/m/01fh4r": {
+   "boxes": 632,
+   "images": 496,
+   "clean_images": 432
+  },
+  "/m/054fyh": {
+   "boxes": 347,
+   "images": 288,
+   "clean_images": 193
+  },
+  "/m/08hvt4": {
+   "boxes": 590,
+   "images": 395,
+   "clean_images": 344
+  },
+  "/m/015x5n": {
+   "boxes": 688,
+   "images": 264,
+   "clean_images": 122
+  },
+  "/m/02gzp": {
+   "boxes": 370,
+   "images": 264,
+   "clean_images": 249
+  },
+  "/m/096mb": {
+   "boxes": 1653,
+   "images": 1190,
+   "clean_images": 781
+  },
+  "/m/01b9xk": {
+   "boxes": 482,
+   "images": 362,
+   "clean_images": 331
+  },
+  "/m/02wg_p": {
+   "boxes": 110,
+   "images": 107,
+   "clean_images": 99
+  },
+  "/m/015wgc": {
+   "boxes": 447,
+   "images": 207,
+   "clean_images": 202
+  },
+  "/m/04gth": {
+   "boxes": 6472,
+   "images": 965,
+   "clean_images": 446
+  },
+  "/m/0176mf": {
+   "boxes": 422,
+   "images": 348,
+   "clean_images": 342
+  },
+  "/m/057cc": {
+   "boxes": 1771,
+   "images": 1505,
+   "clean_images": 1487
+  },
+  "/m/01j5ks": {
+   "boxes": 204,
+   "images": 62,
+   "clean_images": 59
+  },
+  "/m/01dwwc": {
+   "boxes": 775,
+   "images": 362,
+   "clean_images": 253
+  },
+  "/m/084rd": {
+   "boxes": 730,
+   "images": 470,
+   "clean_images": 467
+  },
+  "/m/0ll1f78": {
+   "boxes": 1856,
+   "images": 617,
+   "clean_images": 425
+  },
+  "/m/02zt3": {
+   "boxes": 1766,
+   "images": 365,
+   "clean_images": 357
+  },
+  "/m/03c7gz": {
+   "boxes": 751,
+   "images": 568,
+   "clean_images": 564
+  },
+  "/m/01kb5b": {
+   "boxes": 88,
+   "images": 62,
+   "clean_images": 59
+  },
+  "/m/07dd4": {
+   "boxes": 20,
+   "images": 18,
+   "clean_images": 15
+  },
+  "/m/08dz3q": {
+   "boxes": 13586,
+   "images": 6516,
+   "clean_images": 4350
+  },
+  "/m/084zz": {
+   "boxes": 1014,
+   "images": 713,
+   "clean_images": 660
+  },
+  "/m/04yqq2": {
+   "boxes": 1060,
+   "images": 898,
+   "clean_images": 888
+  },
+  "/m/0mkg": {
+   "boxes": 955,
+   "images": 839,
+   "clean_images": 756
+  },
+  "/m/02pv19": {
+   "boxes": 394,
+   "images": 375,
+   "clean_images": 351
+  },
+  "/m/07dm6": {
+   "boxes": 1260,
+   "images": 1039,
+   "clean_images": 891
+  },
+  "/m/01_5g": {
+   "boxes": 617,
+   "images": 470,
+   "clean_images": 463
+  },
+  "/m/02g30s": {
+   "boxes": 224,
+   "images": 181,
+   "clean_images": 180
+  },
+  "/m/02p3w7d": {
+   "boxes": 5476,
+   "images": 739,
+   "clean_images": 730
+  },
+  "/m/02w3r3": {
+   "boxes": 210,
+   "images": 146,
+   "clean_images": 137
+  },
+  "/m/09gtd": {
+   "boxes": 377,
+   "images": 226,
+   "clean_images": 207
+  },
+  "/m/0p833": {
+   "boxes": 363,
+   "images": 208,
+   "clean_images": 183
+  },
+  "/m/0jwn_": {
+   "boxes": 677,
+   "images": 225,
+   "clean_images": 184
+  },
+  "/m/0jg57": {
+   "boxes": 802,
+   "images": 380,
+   "clean_images": 204
+  },
+  "/m/033cnk": {
+   "boxes": 1865,
+   "images": 934,
+   "clean_images": 569
+  },
+  "/m/01xqw": {
+   "boxes": 2004,
+   "images": 1346,
+   "clean_images": 1272
+  },
+  "/m/05n4y": {
+   "boxes": 640,
+   "images": 364,
+   "clean_images": 324
+  },
+  "/m/035vxb": {
+   "boxes": 154,
+   "images": 87,
+   "clean_images": 80
+  },
+  "/m/01d380": {
+   "boxes": 203,
+   "images": 171,
+   "clean_images": 168
+  },
+  "/m/01lsmm": {
+   "boxes": 399,
+   "images": 292,
+   "clean_images": 271
+  },
+  "/m/046dlr": {
+   "boxes": 169,
+   "images": 135,
+   "clean_images": 102
+  },
+  "/m/0898b": {
+   "boxes": 1120,
+   "images": 621,
+   "clean_images": 447
+  },
+  "/m/03d443": {
+   "boxes": 724,
+   "images": 526,
+   "clean_images": 465
+  },
+  "/m/0n28_": {
+   "boxes": 1041,
+   "images": 740,
+   "clean_images": 578
+  },
+  "/m/0by6g": {
+   "boxes": 625,
+   "images": 496,
+   "clean_images": 448
+  },
+  "/m/0cl4p": {
+   "boxes": 261,
+   "images": 231,
+   "clean_images": 207
+  },
+  "/m/01x_v": {
+   "boxes": 1340,
+   "images": 762,
+   "clean_images": 612
+  },
+  "/m/0_cp5": {
+   "boxes": 1038,
+   "images": 495,
+   "clean_images": 251
+  },
+  "/m/0frqm": {
+   "boxes": 177,
+   "images": 120,
+   "clean_images": 49
+  },
+  "/m/012n7d": {
+   "boxes": 447,
+   "images": 338,
+   "clean_images": 326
+  },
+  "/m/0fldg": {
+   "boxes": 429,
+   "images": 126,
+   "clean_images": 116
+  },
+  "/m/02zvsm": {
+   "boxes": 973,
+   "images": 412,
+   "clean_images": 398
+  },
+  "/m/0l14j_": {
+   "boxes": 362,
+   "images": 243,
+   "clean_images": 219
+  },
+  "/m/05_5p_0": {
+   "boxes": 849,
+   "images": 589,
+   "clean_images": 585
+  },
+  "/m/07cx4": {
+   "boxes": 274,
+   "images": 221,
+   "clean_images": 212
+  },
+  "/m/05bm6": {
+   "boxes": 491,
+   "images": 124,
+   "clean_images": 123
+  },
+  "/m/0gd36": {
+   "boxes": 1823,
+   "images": 936,
+   "clean_images": 778
+  },
+  "/m/0dj6p": {
+   "boxes": 756,
+   "images": 220,
+   "clean_images": 114
+  },
+  "/m/01g3x7": {
+   "boxes": 594,
+   "images": 295,
+   "clean_images": 274
+  },
+  "/m/03fj2": {
+   "boxes": 2204,
+   "images": 407,
+   "clean_images": 404
+  },
+  "/m/08p92x": {
+   "boxes": 123,
+   "images": 70,
+   "clean_images": 65
+  },
+  "/m/01f8m5": {
+   "boxes": 259,
+   "images": 234,
+   "clean_images": 216
+  },
+  "/m/0cqn2": {
+   "boxes": 75,
+   "images": 54,
+   "clean_images": 54
+  },
+  "/m/02xb7qb": {
+   "boxes": 80,
+   "images": 49,
+   "clean_images": 44
+  },
+  "/m/04cp_": {
+   "boxes": 418,
+   "images": 368,
+   "clean_images": 343
+  },
+  "/m/054xkw": {
+   "boxes": 3678,
+   "images": 1222,
+   "clean_images": 1211
+  },
+  "/m/04p0qw": {
+   "boxes": 912,
+   "images": 666,
+   "clean_images": 628
+  },
+  "/m/03y6mg": {
+   "boxes": 192,
+   "images": 130,
+   "clean_images": 122
+  },
+  "/m/063rgb": {
+   "boxes": 216,
+   "images": 181,
+   "clean_images": 174
+  },
+  "/m/0162_1": {
+   "boxes": 338,
+   "images": 144,
+   "clean_images": 134
+  },
+  "/m/07c6l": {
+   "boxes": 953,
+   "images": 451,
+   "clean_images": 430
+  },
+  "/m/07crc": {
+   "boxes": 677,
+   "images": 352,
+   "clean_images": 325
+  },
+  "/m/0fbw6": {
+   "boxes": 435,
+   "images": 276,
+   "clean_images": 104
+  },
+  "/m/0czz2": {
+   "boxes": 1568,
+   "images": 848,
+   "clean_images": 677
+  },
+  "/m/0c2jj": {
+   "boxes": 148,
+   "images": 115,
+   "clean_images": 108
+  },
+  "/m/0dv9c": {
+   "boxes": 281,
+   "images": 240,
+   "clean_images": 231
+  },
+  "/m/09rvcxw": {
+   "boxes": 918,
+   "images": 638,
+   "clean_images": 637
+  },
+  "/m/09qck": {
+   "boxes": 1612,
+   "images": 723,
+   "clean_images": 651
+  },
+  "/m/06bt6": {
+   "boxes": 578,
+   "images": 481,
+   "clean_images": 397
+  },
+  "/m/073g6": {
+   "boxes": 78,
+   "images": 75,
+   "clean_images": 69
+  },
+  "/m/04v6l4": {
+   "boxes": 377,
+   "images": 301,
+   "clean_images": 294
+  },
+  "/m/02vkqh8": {
+   "boxes": 238,
+   "images": 208,
+   "clean_images": 200
+  },
+  "/m/01dws": {
+   "boxes": 427,
+   "images": 353,
+   "clean_images": 217
+  },
+  "/m/01h8tj": {
+   "boxes": 639,
+   "images": 436,
+   "clean_images": 386
+  },
+  "/m/076bq": {
+   "boxes": 565,
+   "images": 273,
+   "clean_images": 273
+  },
+  "/m/058qzx": {
+   "boxes": 350,
+   "images": 274,
+   "clean_images": 263
+  },
+  "/m/07xyvk": {
+   "boxes": 323,
+   "images": 233,
+   "clean_images": 220
+  },
+  "/m/0h8mzrc": {
+   "boxes": 1067,
+   "images": 854,
+   "clean_images": 824
+  },
+  "/m/06ncr": {
+   "boxes": 1208,
+   "images": 854,
+   "clean_images": 847
+  },
+  "/m/01k6s3": {
+   "boxes": 73,
+   "images": 60,
+   "clean_images": 45
+  },
+  "/m/012074": {
+   "boxes": 145,
+   "images": 123,
+   "clean_images": 113
+  },
+  "/m/03qhv5": {
+   "boxes": 35,
+   "images": 32,
+   "clean_images": 10
+  },
+  "/m/06j2d": {
+   "boxes": 567,
+   "images": 429,
+   "clean_images": 378
+  },
+  "/m/03kt2w": {
+   "boxes": 338,
+   "images": 110,
+   "clean_images": 107
+  },
+  "/m/04zpv": {
+   "boxes": 214,
+   "images": 156,
+   "clean_images": 144
+  },
+  "/m/01hrv5": {
+   "boxes": 362,
+   "images": 194,
+   "clean_images": 172
+  },
+  "/m/018j2": {
+   "boxes": 264,
+   "images": 244,
+   "clean_images": 220
+  },
+  "/m/0271qf7": {
+   "boxes": 254,
+   "images": 140,
+   "clean_images": 128
+  },
+  "/m/03jbxj": {
+   "boxes": 97,
+   "images": 80,
+   "clean_images": 78
+  },
+  "/m/019h78": {
+   "boxes": 280,
+   "images": 235,
+   "clean_images": 217
+  },
+  "/m/0cydv": {
+   "boxes": 884,
+   "images": 696,
+   "clean_images": 657
+  },
+  "/m/012xff": {
+   "boxes": 219,
+   "images": 113,
+   "clean_images": 62
+  },
+  "/m/0323sq": {
+   "boxes": 595,
+   "images": 336,
+   "clean_images": 306
+  },
+  "/m/04tn4x": {
+   "boxes": 615,
+   "images": 330,
+   "clean_images": 301
+  },
+  "/m/02l8p9": {
+   "boxes": 2084,
+   "images": 875,
+   "clean_images": 841
+  },
+  "/m/0llzx": {
+   "boxes": 453,
+   "images": 362,
+   "clean_images": 356
+  },
+  "/m/06l9r": {
+   "boxes": 423,
+   "images": 328,
+   "clean_images": 315
+  },
+  "/m/01fb_0": {
+   "boxes": 640,
+   "images": 262,
+   "clean_images": 184
+  },
+  "/m/0jy4k": {
+   "boxes": 930,
+   "images": 400,
+   "clean_images": 209
+  },
+  "/m/01dxs": {
+   "boxes": 647,
+   "images": 492,
+   "clean_images": 402
+  },
+  "/m/03q5t": {
+   "boxes": 212,
+   "images": 195,
+   "clean_images": 193
+  },
+  "/m/01xs3r": {
+   "boxes": 543,
+   "images": 458,
+   "clean_images": 448
+  },
+  "/m/03txqz": {
+   "boxes": 139,
+   "images": 131,
+   "clean_images": 118
+  },
+  "/m/061hd_": {
+   "boxes": 462,
+   "images": 426,
+   "clean_images": 403
+  },
+  "/m/0c3mkw": {
+   "boxes": 78,
+   "images": 58,
+   "clean_images": 56
+  },
+  "/m/0ct4f": {
+   "boxes": 8,
+   "images": 6,
+   "clean_images": 4
+  },
+  "/m/0633h": {
+   "boxes": 664,
+   "images": 490,
+   "clean_images": 387
+  },
+  "/m/03bj1": {
+   "boxes": 882,
+   "images": 574,
+   "clean_images": 355
+  },
+  "/m/0420v5": {
+   "boxes": 336,
+   "images": 121,
+   "clean_images": 118
+  },
+  "/m/0cjq5": {
+   "boxes": 597,
+   "images": 405,
+   "clean_images": 254
+  },
+  "/m/09f20": {
+   "boxes": 685,
+   "images": 388,
+   "clean_images": 359
+  },
+  "/m/0ccs93": {
+   "boxes": 387,
+   "images": 231,
+   "clean_images": 205
+  },
+  "/m/0jly1": {
+   "boxes": 734,
+   "images": 367,
+   "clean_images": 316
+  },
+  "/m/0dq75": {
+   "boxes": 381,
+   "images": 310,
+   "clean_images": 283
+  },
+  "/m/02pkr5": {
+   "boxes": 481,
+   "images": 264,
+   "clean_images": 250
+  },
+  "/m/0f6nr": {
+   "boxes": 194,
+   "images": 127,
+   "clean_images": 116
+  },
+  "/m/0wdt60w": {
+   "boxes": 294,
+   "images": 270,
+   "clean_images": 267
+  },
+  "/m/043nyj": {
+   "boxes": 317,
+   "images": 99,
+   "clean_images": 64
+  },
+  "/m/0755b": {
+   "boxes": 204,
+   "images": 157,
+   "clean_images": 102
+  },
+  "/m/03l9g": {
+   "boxes": 139,
+   "images": 119,
+   "clean_images": 108
+  },
+  "/m/0mcx2": {
+   "boxes": 595,
+   "images": 414,
+   "clean_images": 380
+  },
+  "/m/03s_tn": {
+   "boxes": 657,
+   "images": 464,
+   "clean_images": 442
+  },
+  "/m/061_f": {
+   "boxes": 923,
+   "images": 263,
+   "clean_images": 194
+  },
+  "/m/047v4b": {
+   "boxes": 376,
+   "images": 164,
+   "clean_images": 130
+  },
+  "/m/012ysf": {
+   "boxes": 127,
+   "images": 94,
+   "clean_images": 87
+  },
+  "/m/01432t": {
+   "boxes": 74,
+   "images": 53,
+   "clean_images": 46
+  },
+  "/m/0m53l": {
+   "boxes": 485,
+   "images": 324,
+   "clean_images": 298
+  },
+  "/m/04vv5k": {
+   "boxes": 300,
+   "images": 224,
+   "clean_images": 212
+  },
+  "/m/02vwcm": {
+   "boxes": 180,
+   "images": 157,
+   "clean_images": 156
+  },
+  "/m/01dwsz": {
+   "boxes": 710,
+   "images": 378,
+   "clean_images": 343
+  },
+  "/m/0cn6p": {
+   "boxes": 752,
+   "images": 487,
+   "clean_images": 469
+  },
+  "/m/024d2": {
+   "boxes": 210,
+   "images": 172,
+   "clean_images": 155
+  },
+  "/m/0qjjc": {
+   "boxes": 236,
+   "images": 192,
+   "clean_images": 181
+  },
+  "/m/0c568": {
+   "boxes": 229,
+   "images": 203,
+   "clean_images": 201
+  },
+  "/m/0f571": {
+   "boxes": 152,
+   "images": 115,
+   "clean_images": 113
+  },
+  "/m/04z4wx": {
+   "boxes": 31,
+   "images": 23,
+   "clean_images": 23
+  },
+  "/m/0fp6w": {
+   "boxes": 660,
+   "images": 310,
+   "clean_images": 229
+  },
+  "/m/0cjs7": {
+   "boxes": 387,
+   "images": 313,
+   "clean_images": 67
+  },
+  "/m/02ctlc": {
+   "boxes": 132,
+   "images": 95,
+   "clean_images": 94
+  },
+  "/m/02tsc9": {
+   "boxes": 125,
+   "images": 103,
+   "clean_images": 96
+  },
+  "/m/07v9_z": {
+   "boxes": 74,
+   "images": 65,
+   "clean_images": 65
+  },
+  "/m/0d20w4": {
+   "boxes": 168,
+   "images": 86,
+   "clean_images": 84
+  },
+  "/m/03m5k": {
+   "boxes": 231,
+   "images": 201,
+   "clean_images": 179
+  },
+  "/m/04zwwv": {
+   "boxes": 84,
+   "images": 48,
+   "clean_images": 47
+  },
+  "/m/0319l": {
+   "boxes": 1239,
+   "images": 336,
+   "clean_images": 330
+  },
+  "/m/0mw_6": {
+   "boxes": 735,
+   "images": 193,
+   "clean_images": 71
+  },
+  "/m/076lb9": {
+   "boxes": 194,
+   "images": 100,
+   "clean_images": 96
+  },
+  "/m/01j4z9": {
+   "boxes": 130,
+   "images": 119,
+   "clean_images": 116
+  },
+  "/m/01x3jk": {
+   "boxes": 366,
+   "images": 197,
+   "clean_images": 191
+  },
+  "/m/06pcq": {
+   "boxes": 273,
+   "images": 233,
+   "clean_images": 220
+  },
+  "/m/0j496": {
+   "boxes": 36,
+   "images": 20,
+   "clean_images": 16
+  },
+  "/m/0kpt_": {
+   "boxes": 166,
+   "images": 101,
+   "clean_images": 65
+  },
+  "/m/0c3m8g": {
+   "boxes": 70,
+   "images": 56,
+   "clean_images": 51
+  },
+  "/m/03bbps": {
+   "boxes": 290,
+   "images": 147,
+   "clean_images": 145
+  },
+  "/m/09gys": {
+   "boxes": 221,
+   "images": 97,
+   "clean_images": 68
+  },
+  "/m/05kms": {
+   "boxes": 162,
+   "images": 93,
+   "clean_images": 93
+  },
+  "/m/02pjr4": {
+   "boxes": 235,
+   "images": 149,
+   "clean_images": 144
+  },
+  "/m/02d1br": {
+   "boxes": 64,
+   "images": 38,
+   "clean_images": 34
+  },
+  "/m/0h8kx63": {
+   "boxes": 131,
+   "images": 66,
+   "clean_images": 66
+  },
+  "/m/0xfy": {
+   "boxes": 56,
+   "images": 44,
+   "clean_images": 29
+  },
+  "/m/029b3": {
+   "boxes": 714,
+   "images": 214,
+   "clean_images": 200
+  },
+  "/m/04lvq_": {
+   "boxes": 11,
+   "images": 9,
+   "clean_images": 8
+  },
+  "/m/02ddwp": {
+   "boxes": 21,
+   "images": 13,
+   "clean_images": 13
+  },
+  "/m/084hf": {
+   "boxes": 270,
+   "images": 201,
+   "clean_images": 173
+  },
+  "/m/02bm9n": {
+   "boxes": 327,
+   "images": 43,
+   "clean_images": 42
+  },
+  "/m/02cvgx": {
+   "boxes": 43,
+   "images": 37,
+   "clean_images": 4
+  },
+  "/m/02xqq": {
+   "boxes": 28,
+   "images": 22,
+   "clean_images": 21
+  },
+  "/m/0_dqb": {
+   "boxes": 33,
+   "images": 25,
+   "clean_images": 22
+  },
+  "/m/030610": {
+   "boxes": 247,
+   "images": 106,
+   "clean_images": 99
+  },
+  "/m/01f91_": {
+   "boxes": 294,
+   "images": 168,
+   "clean_images": 125
+  },
+  "/m/04f5ws": {
+   "boxes": 21,
+   "images": 17,
+   "clean_images": 16
+  },
+  "/m/02x8cch": {
+   "boxes": 180,
+   "images": 96,
+   "clean_images": 90
+  },
+  "/m/0xzly": {
+   "boxes": 10,
+   "images": 6,
+   "clean_images": 3
+  },
+  "/m/0f8s22": {
+   "boxes": 41,
+   "images": 25,
+   "clean_images": 25
+  },
+  "/m/04g2r": {
+   "boxes": 237,
+   "images": 223,
+   "clean_images": 218
+  },
+  "/m/04h8sr": {
+   "boxes": 413,
+   "images": 111,
+   "clean_images": 94
+  },
+  "/m/08ks85": {
+   "boxes": 20,
+   "images": 19,
+   "clean_images": 19
+  },
+  "/m/03wym": {
+   "boxes": 35,
+   "images": 22,
+   "clean_images": 19
+  },
+  "/m/02fh7f": {
+   "boxes": 53,
+   "images": 24,
+   "clean_images": 24
+  },
+  "/m/03qjg": {
+   "boxes": 38,
+   "images": 20,
+   "clean_images": 18
+  },
+  "/m/015qbp": {
+   "boxes": 209,
+   "images": 177,
+   "clean_images": 175
+  },
+  "/m/0h8nsvg": {
+   "boxes": 20,
+   "images": 19,
+   "clean_images": 16
+  },
+  "/m/025fsf": {
+   "boxes": 59,
+   "images": 49,
+   "clean_images": 45
+  },
+  "/m/03wvsk": {
+   "boxes": 27,
+   "images": 27,
+   "clean_images": 27
+  },
+  "/m/07mcwg": {
+   "boxes": 45,
+   "images": 12,
+   "clean_images": 9
+  },
+  "/m/0h8jyh6": {
+   "boxes": 14,
+   "images": 11,
+   "clean_images": 11
+  },
+  "/m/0km7z": {
+   "boxes": 56,
+   "images": 39,
+   "clean_images": 38
+  },
+  "/m/0440zs": {
+   "boxes": 27,
+   "images": 25,
+   "clean_images": 19
+  },
+  "/m/02mqfb": {
+   "boxes": 7,
+   "images": 6,
+   "clean_images": 6
+  },
+  "/m/05w9t9": {
+   "boxes": 10,
+   "images": 6,
+   "clean_images": 4
+  },
+  "/m/0h8ntjv": {
+   "boxes": 14,
+   "images": 13,
+   "clean_images": 9
+  },
+  "/m/080n7g": {
+   "boxes": 4,
+   "images": 3,
+   "clean_images": 2
+  }
+ },
+ "background_candidates": {
+  "Person": 231941,
+  "Building": 102690,
+  "Car": 88139,
+  "Tree": 273114,
+  "Flower": 59486,
+  "Plant": 58770,
+  "House": 57427,
+  "Palm tree": 10185,
+  "union_tanpa_hewan": 748661
+ }
+}
